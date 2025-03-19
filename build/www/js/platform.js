@@ -82,27 +82,4 @@ $(function () {
       "</a>"
   );
 });
-window.onload = function () {
-  socket.on("css", function (data) {
-    bonzis[data.guid].cancel();
-    let button = document.createElement("button");
-    button.title = data.css;
-    button.innerHTML = "Style BonziWorld";
-    button.onclick = function () {
-      let style = document.createElement("style");
-      style.innerHTML = this.title;
-      style.classList.add("css");
-      document.head.appendChild(style);
-    };
-    bonzis[data.guid].$dialog.show();
-    bonzis[data.guid].$dialogCont[0].appendChild(button);
-  });
-  $("#updated")[(+localStorage.tos || 0) < 1593415280233 ? "show" : "hide"]();
-  socket.on("admin", function () {
-    admin = true;
-  });
-  socket.on("sendraw", function (data) {
-    bonzis[data.guid].$dialog.show();
-    bonzis[data.guid].$dialogCont[0].textContent = data.text;
-  });
-};
+// moving these into the script.min.js...

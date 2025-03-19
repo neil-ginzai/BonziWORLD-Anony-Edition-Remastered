@@ -4,6 +4,9 @@
 
 // go behh yourself
 
+var bonziTvCommercialMode = false;
+var bonziTvCool = false;
+
 // youtube url variables
 let youtube_url = "https://www.youtube.com/watch?v=";
 let youtube_tiny_url = "https://www.youtube.com/watch?v=";
@@ -11,7 +14,7 @@ let youtube_shorts_url = "";
 let youtube_embed_url = "";
 let youtube_music_url = "";
 
-/*
+/* 
   "https://www.youtube.com/watch?v=97dyt7MXWpo",
   "https://www.youtube.com/watch?v=t0JyCdk5ymo",
   "https://www.youtube.com/watch?v=bzXzGMbdQfY",
@@ -34,14 +37,85 @@ let youtube_music_url = "";
 */
 
 // the clusterfuck of video ids
-var videoIdsCommercials = ["https://www.youtube.com/watch?v=b2OUKjLzcEc"];
-var videoIds4PM2430PM = ["https://"];
-var videoIds5PM = ["https://www.youtube.com/watch?v=iK4BKnkW9rc"];
-var videoIds7PM = ["https://www.youtube.com/watch?v=IyirV9lir8Q"];
-var videoIds25MinutesofMSAgent = ["https://"];
+var videoIdsCommercials = [
+  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+  "https://www.youtube.com/watch?v=445gC5CYQfw",
+  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+  "https://www.youtube.com/watch?v=I61oSL5xBkk",
+  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+  "https://www.youtube.com/watch?v=UkcKserLvnc",
+  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+];
+var videoIds4PM2430PM = [
+  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+  "https://www.youtube.com/watch?v=445gC5CYQfw",
+  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+  "https://www.youtube.com/watch?v=I61oSL5xBkk",
+  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+  "https://www.youtube.com/watch?v=UkcKserLvnc",
+  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+];
+var videoIds5PM = [
+  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+  "https://www.youtube.com/watch?v=445gC5CYQfw",
+  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+  "https://www.youtube.com/watch?v=I61oSL5xBkk",
+  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+  "https://www.youtube.com/watch?v=UkcKserLvnc",
+  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+];
+var videoIds7PM = [
+  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+  "https://www.youtube.com/watch?v=445gC5CYQfw",
+  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+  "https://www.youtube.com/watch?v=I61oSL5xBkk",
+  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+  "https://www.youtube.com/watch?v=UkcKserLvnc",
+  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+];
+var videoIds25MinutesofMSAgent = [
+  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+  "https://www.youtube.com/watch?v=445gC5CYQfw",
+  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+  "https://www.youtube.com/watch?v=I61oSL5xBkk",
+  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+  "https://www.youtube.com/watch?v=UkcKserLvnc",
+  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+];
 
 const Ban = require("./ban.js");
 const Utils = require("./utils.js");
+const bot = require("./bot.js");
 const io = require("./index.js").io;
 const settings = require("./settings.json");
 const sanitize = require("sanitize-html");
@@ -66,7 +140,204 @@ function checkRoomEmpty(room) {
   delete rooms[room.rid];
   delete room;
 }
+var settingsSantize = {
+  allowedTags: [
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+    "blockquote",
+    "p",
+    "a",
+    "ul",
+    "ol",
+    "nl",
+    "li",
+    "b",
+    "i",
+    "strong",
+    "em",
+    "strike",
+    "code",
+    "hr",
+    "br",
+    "div",
+    "table",
+    "thead",
+    "caption",
+    "tbody",
+    "tr",
+    "th",
+    "td",
+    "pre",
+    "iframe",
+    "marquee",
+    "button",
+    "input",
+    "details",
+    "summary",
+    "progress",
+    "meter",
+    "font",
+    "span",
+    "select",
+    "option",
+    "abbr",
+    "acronym",
+    "adress",
+    "article",
+    "aside",
+    "bdi",
+    "bdo",
+    "big",
+    "center",
+    "site",
+    "data",
+    "datalist",
+    "dl",
+    "del",
+    "dfn",
+    "dialog",
+    "dir",
+    "dl",
+    "dt",
+    "fieldset",
+    "figure",
+    "figcaption",
+    "header",
+    "ins",
+    "kbd",
+    "legend",
+    "mark",
+    "nav",
+    "optgroup",
+    "form",
+    "q",
+    "rp",
+    "rt",
+    "ruby",
+    "s",
+    "sample",
+    "section",
+    "small",
+    "sub",
+    "sup",
+    "template",
+    "textarea",
+    "tt",
+    "u",
+  ],
+  allowedAttributes: {
+    a: ["href", "name", "target"],
+    p: ["align"],
+    table: [
+      "align",
+      "border",
+      "bgcolor",
+      "cellpadding",
+      "cellspadding",
+      "frame",
+      "rules",
+      "width",
+    ],
+    tbody: ["align", "valign"],
+    tfoot: ["align", "valign"],
+    td: ["align", "colspan", "headers", "nowrap"],
+    th: ["align", "colspan", "headers", "nowrap"],
+    textarea: [
+      "cols",
+      "dirname",
+      "disabled",
+      "placeholder",
+      "maxlength",
+      "readonly",
+      "required",
+      "rows",
+      "wrap",
+    ],
+    pre: ["width"],
+    ol: ["compact", "reversed", "start", "type"],
+    option: ["disabled"],
+    optgroup: ["disabled", "label", "selected"],
+    legend: ["align"],
+    li: ["type", "value"],
+    hr: ["align", "noshade", "size", "width"],
+    fieldset: ["disabled"],
+    dialog: ["open"],
+    dir: ["compact"],
+    bdo: ["dir"],
+    marquee: [
+      "behavior",
+      "bgcolor",
+      "direction",
+      "width",
+      "height",
+      "loop",
+      "scrollamount",
+      "scrolldelay",
+    ],
+    button: ["disabled"],
+    input: [
+      "value",
+      "type",
+      "disabled",
+      "maxlength",
+      "max",
+      "min",
+      "placeholder",
+      "readonly",
+      "required",
+      "checked",
+    ],
+    details: ["open"],
+    div: ["align"],
+    progress: ["value", "max"],
+    meter: ["value", "max", "min", "optimum", "low", "high"],
+    font: ["size", "family", "color"],
+    select: ["disabled", "multiple", "require"],
+    ul: ["type", "compact"],
+    "*": ["hidden", "spellcheck", "title", "contenteditable", "data-style"],
+  },
+  selfClosing: [
+    "img",
+    "br",
+    "hr",
+    "area",
+    "base",
+    "basefont",
+    "input",
+    "link",
+    "meta",
+    "wbr",
+  ],
+  allowedSchemes: ["http", "https", "ftp", "mailto", "data"],
+  allowedSchemesByTag: {},
+  allowedSchemesAppliedToAttributes: ["href", "src", "cite"],
+  allowProtocolRelative: true,
+};
 
+function sanitizeHTML(string) {
+  if (typeof string == "string") {
+    return (
+      string
+        .replaceAll("&", "&")
+        .replaceAll("#", "#")
+        //.replaceAll("'", "'")
+        .replaceAll('"', '"')
+    );
+  } else {
+    return;
+  }
+}
+function sanitizeHTML2(string) {
+  return string
+    .replaceAll("&", "&")
+    .replaceAll("#", "#")
+    .replaceAll("'", "'")
+    .replaceAll('"', '"');
+}
 class Room {
   constructor(rid, prefs) {
     this.rid = rid;
@@ -151,6 +422,68 @@ let userCommands = {
     this.room.emit("joke", {
       guid: this.guid,
       rng: Math.random(),
+    });
+  },
+  image: function (imgRaw) {
+    if (imgRaw.includes('"')) {
+      return;
+    }
+    if (imgRaw.includes("'")) {
+      return;
+    }
+    var img = this.private.sanitize
+      ? sanitize(sanitizeHTML(imgRaw))
+      : sanitizeHTML(imgRaw);
+    this.room.emit("image", {
+      guid: this.guid,
+      img: img,
+      vid: img, // backwards compatibility
+    });
+  },
+  video: function (vidRaw) {
+    if (vidRaw.includes('"')) {
+      return;
+    }
+    if (vidRaw.includes("'")) {
+      return;
+    }
+    var vid = this.private.sanitize
+      ? sanitize(sanitizeHTML(vidRaw))
+      : sanitizeHTML(vidRaw);
+    this.room.emit("video", {
+      guid: this.guid,
+      vid: vid,
+    });
+  },
+  audio: function (audRaw) {
+    if (audRaw.includes('"')) {
+      return;
+    }
+    if (audRaw.includes("'")) {
+      return;
+    }
+    var aud = this.private.sanitize
+      ? sanitize(sanitizeHTML(audRaw))
+      : sanitizeHTML(audRaw);
+    this.room.emit("audio", {
+      guid: this.guid,
+      aud: aud,
+    });
+  },
+  img: function (imgRaw) {
+    if (imgRaw.includes('"')) {
+      return;
+    }
+    if (imgRaw.includes("'")) {
+      return;
+    }
+    var img = this.private.sanitize
+      ? sanitize(sanitizeHTML(imgRaw))
+      : sanitizeHTML(imgRaw);
+    this.room.emit("image", {
+      guid: this.guid,
+      img: img,
+      vid: img, // backwards compatibility
     });
   },
   fact: function () {
@@ -370,6 +703,7 @@ let userCommands = {
   },
   pope: function () {
     this.public.color = "pope";
+    this.public.status = "Owner of BWAE.";
     this.room.updateUser(this);
   },
   asshole: function () {
@@ -401,6 +735,47 @@ let userCommands = {
 
     let name = argsString || this.room.prefs.defaultName;
     this.public.name = this.private.sanitize ? sanitize(name) : name;
+    this.room.updateUser(this);
+  },
+  voice: function (voice) {
+    if (typeof voice != "undefined" && typeof voice == "string") {
+      this.public.voice = voice;
+    } else {
+      this.public.voice =
+        settings.bonziVoices[
+          Math.floor(Math.random() * settings.bonziVoices.length)
+        ];
+    }
+    this.room.updateUser(this);
+  },
+  tts: function (voice) {
+    voice = parseInt(voice);
+
+    this.public.voice = voice;
+
+    this.room.updateUser(this);
+  },
+  status: function () {
+    let argsString = Utils.argsString(arguments);
+    if (argsString.length > this.room.prefs.status_limit) return;
+    if (argsString.includes("{COLOR}")) {
+      argsString = this.public.color;
+    }
+    if (argsString.includes("{NAME}")) {
+      argsString = sanitizeHTML2(this.public.name);
+    }
+    if (argsString.includes("{ROOM}")) {
+      argsString = sanitizeHTML2(this.room.rid.slice(0, 16));
+    }
+    if (argsString.includes('"')) {
+      return;
+    }
+    if (argsString.includes("'")) {
+      return;
+    }
+
+    let status = argsString;
+    this.public.status = this.private.sanitize ? sanitize(status) : status;
     this.room.updateUser(this);
   },
   setbonzitvvid: function (vidRaw) {
@@ -441,27 +816,27 @@ let userCommands = {
           identId: vidId,
         });
       } else if (hours == 18 && minutes <= 30) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * videoIds6PM.length);
+        var vid = videoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: videoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidId,
         });
       } else if (hours == 19 && minutes <= 22) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * videoIds6PM.length);
+        var vid = videoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: videoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidId,
@@ -512,27 +887,27 @@ let userCommands = {
           identId: vidId,
         });
       } else if (hours == 18 && minutes <= 30) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * videoIds6PM.length);
+        var vid = videoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: videoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidId,
         });
       } else if (hours == 19 && hours <= 22) {
-        var num = Math.floor(Math.random() * videoIds7PM.length);
-        var vid = videoIds7PM[num]
+        var num = Math.floor(Math.random() * videoIds6PM.length);
+        var vid = videoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds7PM[num]
+          id: videoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", ""),
           identId: vidId,
@@ -540,7 +915,7 @@ let userCommands = {
       } else if (hours == 23 || (hours == 22 && minutes >= 9)) {
         //tvhook.send("BonziTV is now off air.");
         this.room.emit("replaceTVWithURL", {
-          id: "kQsoV69uGIY",
+          id: "zjWHkwQTRss",
           hourAmount: hours,
           minuteAmount: minutes,
           identId: bonziTvIdent[ident].replace(
@@ -564,6 +939,7 @@ let userCommands = {
       }
     }
   },
+
   setbonzitvvid2: function (vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
@@ -574,32 +950,23 @@ let userCommands = {
       identId: vidId,
     });
   },
-  voice: function (voice) {
-    if (typeof voice != "undefined" && typeof voice == "string") {
-      this.public.voice = voice;
-    } else {
-      this.public.voice =
-        settings.bonziVoices[
-          Math.floor(Math.random() * settings.bonziVoices.length)
-        ];
-    }
-    this.room.updateUser(this);
-  },
-  tts: function (voice) {
-    voice = parseInt(voice);
-
-    this.public.voice = voice;
-
-    this.room.updateUser(this);
-  },
   setbonzitvvid3: function (vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
     var bonziTvIdent = [
-      "https://www.youtube.com/watch?v=l_F7ZyzufPg",
-      "https://www.youtube.com/watch?v=GCA5CB5uUyA",
-      "https://www.youtube.com/watch?v=rBPKOZNd7mA",
-      "https://www.youtube.com/watch?v=VJs_VALzi_8",
+      "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+      "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+      "https://www.youtube.com/watch?v=445gC5CYQfw",
+      "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+      "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+      "https://www.youtube.com/watch?v=I61oSL5xBkk",
+      "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+      "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+      "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+      "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+      "https://www.youtube.com/watch?v=UkcKserLvnc",
+      "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+      "https://www.youtube.com/watch?v=tk2MvV8LeZs",
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
@@ -612,28 +979,32 @@ let userCommands = {
       ),
     });
   },
-  status: function () {
-    let argsString = Utils.argsString(arguments);
-    if (argsString.length > this.room.prefs.status_limit) return;
-    if (argsString.includes("{COLOR}")) {
-      argsString = this.public.color;
-    }
-    if (argsString.includes("{NAME}")) {
-      argsString = sanitizeHTML2(this.public.name);
-    }
-    if (argsString.includes("{ROOM}")) {
-      argsString = sanitizeHTML2(this.room.rid.slice(0, 16));
-    }
-    if (argsString.includes('"')) {
-      return;
-    }
-    if (argsString.includes("'")) {
-      return;
-    }
-
-    let status = argsString;
-    this.public.status = this.private.sanitize ? sanitize(status) : status;
-    this.room.updateUser(this);
+  setbonzitvvid4: function (vidRaw) {
+    var bonziTvIdent = [
+      "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
+      "https://www.youtube.com/watch?v=6ZykGz5kF0U",
+      "https://www.youtube.com/watch?v=445gC5CYQfw",
+      "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+      "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+      "https://www.youtube.com/watch?v=I61oSL5xBkk",
+      "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
+      "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
+      "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
+      "https://www.youtube.com/watch?v=bSKJg5jsgdc",
+      "https://www.youtube.com/watch?v=UkcKserLvnc",
+      "https://www.youtube.com/watch?v=x4pg9NH3XVk",
+      "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+    ];
+    var ident = Math.floor(Math.random() * bonziTvIdent.length);
+    var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+    this.room.vid = vidId;
+    this.room.emit("replaceTVWithURL", {
+      id: vidId,
+      identId: bonziTvIdent[ident].replace(
+        "https://www.youtube.com/watch?v=",
+        ""
+      ),
+    });
   },
   pitch: function (pitch) {
     pitch = parseInt(pitch);
@@ -809,7 +1180,7 @@ class User {
       const minutes = date.getMinutes();
       var bonziTvIdent = videoIdsCommercials;
       var ident = Math.floor(Math.random() * bonziTvIdent.length);
-      const ytdl = require("ytdl-core");
+      //const ytdl = require("ytdl-core");
       /*var tvhook = new Webhook("https://discord.com/api/webhooks/1022179106412036166/8cJeQN1dFC78Rar0pdjAEyYnsFFq--ZiWZt4WTT1--pnLikWRzwGjOHWYEYmtdmyjcRg");*/
 
       if (bonziTvCommercialMode) {
@@ -930,8 +1301,8 @@ class User {
             ),
           });
         } else if (hours == 18 && minutes <= 20) {
-          var num = Math.floor(Math.random() * videoIds7PM.length);
-          var vid = videoIds7PM[num]
+          var num = Math.floor(Math.random() * videoIds6PM.length);
+          var vid = videoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -968,7 +1339,7 @@ class User {
           });*/
           //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
           this.room.emit("replaceTVWithURL", {
-            id: videoIds7PM[num]
+            id: videoIds6PM[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(
@@ -977,8 +1348,8 @@ class User {
             ),
           });
         } else if (hours == 19 && minutes <= 22) {
-          var num = Math.floor(Math.random() * videoIds7PM.length);
-          var vid = videoIds7PM[num]
+          var num = Math.floor(Math.random() * videoIds6PM.length);
+          var vid = videoIds6PM[num]
             .replace("https://www.youtube.com/watch?v=", "")
             .replace("https://www.youtube.com/", "");
           this.room.vid = vid;
@@ -1015,7 +1386,7 @@ class User {
           });*/
           //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
           this.room.emit("replaceTVWithURL", {
-            id: videoIds7PM[num]
+            id: videoIds6PM[num]
               .replace("https://www.youtube.com/watch?v=", "")
               .replace("https://www.youtube.com/", ""),
             identId: bonziTvIdent[ident].replace(
@@ -1080,7 +1451,6 @@ class User {
       }, 20000);
     }
   }
-
   talk(data) {
     if (typeof data != "object") {
       // Crash fix (issue #9)

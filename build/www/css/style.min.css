@@ -144,7 +144,10 @@ html {
   bottom: 50px;
 }
 .xp_dialog,
-.message_cont {
+.message_cont,
+.message_cont_arcade,
+.message_cont_readme,
+.message_cont_rules {
   background: #ffffe1;
   color: #000;
   -webkit-border-radius: 9px;
@@ -152,7 +155,24 @@ html {
   border-radius: 9px;
   border: #000000 solid 1px;
 }
-
+.message_cont_arcade {
+  z-index: 1;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  padding: 32px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#page_arcade_menu {
+  width: 1024;
+  overflow: hidden;
+}
 #chat_log {
   background-color: #424242;
   background-color: rgba(0, 225, 255, 0.45);
@@ -387,7 +407,7 @@ html {
   bottom: 5px;
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: rgba(98, 33, 142, 0.5);
+  background-color: rgba(0, 90, 126, 0.5);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 #chat_log #chat_log_list #cll-glue-toggle i {
