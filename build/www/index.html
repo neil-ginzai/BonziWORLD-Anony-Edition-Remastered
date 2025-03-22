@@ -71,6 +71,7 @@
     <script src="./js/lib/socket.io-1.4.5.js"></script>
     <script src="./js/lib/speakjs/speakClient.js"></script>
     <script src="./js/lib/espeak/espeak.js"></script>
+    <script src="./dist/js/version_handler.js" type="text/javascript"></script>
     <script src="./js/lib/espeak/espeak.worker.js"></script>
     <script src="https://www.youtube.com/player_api"></script>
     <script
@@ -82,7 +83,7 @@
     <script src="./js/lib/jquery.contextMenu.min.js"></script>
 
     <script src="./cordova.js"></script>
-
+    
     <script src="./js/platform.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/platform.css" />
     <style>
@@ -173,7 +174,7 @@
             style="padding-top: 3.1px; padding-left: 7px"
           >
             <span id="branding_log">BonziWORLD Anony Edition REMASTERED</span> |
-            <span id="ver_log">1.6.0</span>
+            <span id="ver_log"></span>
           </div>
           <div class="clh-col" id="chat_log_status"></div>
           <div class="clh-col" id="chat_log_controls">
@@ -243,11 +244,12 @@
         <div id="login_apps" class="app_showcase"></div>
         <div id="login_readme">
           <b><a href="./misc.html">Miscellaneous Links</a></b><br>
+          <b><a href="./"><del>Check out the classic</del> nuh uh</a></b><br>
           <b><big><a href="https://noobworldbackup.onrender.com">Check out NoobWORLD!</a></big></b>
           <hr>
           Make sure to check out the
           <a id="readme" href="readme.html" target="_blank">README</a> before
-          use. Did you know that BonziWORLD E. Edition is Absolute <b><big>CANCER?</big></b>
+          use. Did you know that BonziWORLD E. Edition is Absolute <b><big>CANCER?</big></b> Also 2 troonbox users called "hainster (hainshit)" and "AntonHBH (NiggerHBH)" are saying that siobhan is better than Anony. Well fuck you 2 seamass supporters and troonboxfags, Come on, Get a fucking life and kill yourself like a tranny, NiggerHBH and hainshit.
         </div>
         <div id="login_card" style="display: none">
           <input id="login_name" type="text" placeholder="Nickname" />
@@ -271,14 +273,14 @@
           <a href="https://youtube.com/@ThatOneAnony" alt="Youtube" title="Youtube" target="_blank" class="icons" style="margin-right: 10px;"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
           <a href="https://github.com/anonybehh" alt="Cosmic on Github" title="Cosmic on Github" target="_blank" class="icons" style="margin-right: 10px;"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
       </div>
-        <div id="login_version">Version 1.6.0</div>
+        <div id="login_version"></div>
       </div>
        
       <div id="page_error" class="page" style="display: none">
         <div id="error_cont" class="message_cont">
           <img src="./img/error/logo.png" /><br />
           <br />
-          <h1>BonziWORLD.exe has encountered an error and needs to close.</h1>
+          <h1>BonziWORLDAnonyEditionRemastered.exe has encountered an error and needs to close.</h1>
           <br />
           <br />
           Nah, but seriously there was an error and you got disconnected from the server. Chances are, your internet just died out for a brief moment or your device went to sleep. Otherwise the server just screwed up.<br />
@@ -293,6 +295,17 @@
           <a href="#" onClick="window.location.reload()">Reload?</a><br />
           <br />
           Room ID - <span class="room_id">???</span><br />
+        </div>
+      </div>
+      <div id="page_changelog" class="page" style="display: none">
+        <div id="error_cont" class="message_cont">
+          <h1>Changelogs</h1>
+          <br>
+          <ul>
+            <li>1.14.0.0 - The release.</li>
+            </ul>
+            <br>
+            <button onclick="$('#page_changelog').hide()">Close</button>
         </div>
       </div>
       <div class="page_arcade_menu no_selection" id="page_arcade_menu" style="display: none;">
@@ -345,12 +358,12 @@
         <div id="unsupp_cont" class="message_cont">
           <img src="./img/error/logo.png" /><br />
           <br />
-          <h1>BonziWORLD cannot run in this browser.</h1>
+          <h1>BonziWORLDAnonyEditionRemastered cannot run in this browser.</h1>
           <br />
-          Unfortunately, BonziWORLD cannot run in this browser for the following
+          Unfortunately, BonziWORLDAnonyEditionRemastered cannot run in this browser for the following
           reasons:<br />
           <ul id="unsupp_reasons"></ul>
-          You can try to download a BonziWORLD app that works on your device, or
+          You can try to download a BonziWORLDAnonyEditionRemastered app that works on your device, or
           update your browser.
           <div id="login_apps" class="app_showcase"></div>
         </div>

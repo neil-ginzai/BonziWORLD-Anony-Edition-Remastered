@@ -568,8 +568,8 @@ html {
   color: #ef5350;
 }
 #chat_log_list::-webkit-scrollbar-thumb {
-  background-color: #9b59b6;
-  border: 2px solid #8e44ad;
+  background-color: #59a3b6;
+  border: 2px solid #44ada8;
 }
 
 .xp_textbox,

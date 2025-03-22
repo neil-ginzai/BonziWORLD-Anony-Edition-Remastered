@@ -627,6 +627,30 @@ let userCommands = {
       );
     }
   },
+  jewify: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      target.socket.emit("jewify", {
+        reason: "You got banned.",
+      });
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to jewify left. Get dunked on nerd"
+      );
+    }
+  },
   crosscolor: function (color) {
     var clrurl = this.private.sanitize ? sanitize(color) : color;
     if (
@@ -713,6 +737,12 @@ let userCommands = {
   },
   asshole: function () {
     this.room.emit("asshole", {
+      guid: this.guid,
+      target: sanitize(Utils.argsString(arguments)),
+    });
+  },
+  heil: function () {
+    this.room.emit("heil", {
       guid: this.guid,
       target: sanitize(Utils.argsString(arguments)),
     });
@@ -1090,7 +1120,6 @@ class User {
       rid = roomsPublic[Math.max(roomsPublic.length - 1, 0)];
       roomSpecified = false;
     }
-
     // If private room
     if (roomSpecified) {
       if (sanitize(rid) != rid) {
