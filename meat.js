@@ -680,6 +680,11 @@ let userCommands = {
       swag: swag == "swag",
     });
   },
+  sad: function () {
+    this.room.emit("sad", {
+      guid: this.guid,
+    });
+  },
   startyping: function () {
     this.room.emit("typing", { guid: this.guid });
   },
@@ -711,6 +716,9 @@ let userCommands = {
       guid: this.guid,
       target: sanitize(Utils.argsString(arguments)),
     });
+  },
+  changelog: function () {
+    this.socket.emit("changelog");
   },
   owo: function () {
     this.room.emit("owo", {
