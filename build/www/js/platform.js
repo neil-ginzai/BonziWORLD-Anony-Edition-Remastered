@@ -43,9 +43,11 @@ $(function () {
   $(".app_showcase").append(
     '<img src="./img/app/bonzico_friendly.png" alt="no" width=211/>'
   );
+  /*
   $(".app_showcase").append(
     '<img src="./img/app/wip.png" alt="This BonziWORLD Mod is WIP." width=211/>'
   );
+  */
   $(".app_showcase").append(
     '<img src="./img/app/desktop.png" alt="Open on PC for the best experience." width=211/>' +
       "</a>"
@@ -85,4 +87,4 @@ $(function () {
       "</a>"
   );
 });
-// moving these into the script.min.js...
+// moving these into the script.min.js debunker...
