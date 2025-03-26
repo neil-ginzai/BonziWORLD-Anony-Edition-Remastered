@@ -50,7 +50,12 @@ var videoIdsCommercials = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
 ];
 var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -65,7 +70,12 @@ var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
 ];
 var videoIds5PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -80,7 +90,12 @@ var videoIds5PM = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
 ];
 var videoIds7PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -95,7 +110,12 @@ var videoIds7PM = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
 ];
 var videoIds6PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -110,7 +130,12 @@ var videoIds6PM = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
 ];
 var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -125,7 +150,12 @@ var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
 ];
 
 const Ban = require("./ban.js");
@@ -619,6 +649,41 @@ let userCommands = {
       );
     }
   },
+  announce: function(param) {
+    if (this.private.runlevel < 1 && this.public.color != "blessed") return;
+    this.room.emit("announcement", {from:this.public.name,msg:param});
+  },
+
+  poll: function(param) {
+    if (this.private.runlevel < 1 && this.public.color != "blessed") return;
+    this.room.emit("pollshow", param);
+    this.room.pollvotes = {};
+    this.room.emit("pollupdate", {yes: 0, no: 0, votecount: 0});
+  },
+ behh: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      target.socket.emit("behh", {
+        reason: "You got banned.",
+      });
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to behhify left. Get dunked on nerd"
+      );
+    }
+  },
   nuke: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");
@@ -640,6 +705,30 @@ let userCommands = {
       this.socket.emit(
         "alert",
         "The user you are trying to nuke left. Get dunked on nerd"
+      );
+    }
+  },
+  niggy: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      target.socket.emit("niggy", {
+        reason: "You got banned.",
+      });
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to niggify left. Get dunked on nerd"
       );
     }
   },
@@ -667,6 +756,37 @@ let userCommands = {
       );
     }
   },
+  nofuckoff: function (data) {
+    if (this.private.runlevel < 3) {
+        this.socket.emit("alert", "admin=true");
+        return;
+    }
+
+    this.room.emit("nofuckoff", {
+        guid: data,
+    });
+    var user = this;
+    setTimeout(function () {
+        let pu = user.room.getUsersPublic()[data];
+        if (pu && pu.color) {
+            let target;
+            user.room.users.map((n) => {
+                if (n.guid == data) {
+                    target = n;
+                }
+            });
+            setTimeout(function () {
+                target.disconnect();
+                target.socket.emit("kick", {
+                    reason: "No fuck off<br><br><video style='border-radius: 3px;' src=\"https://cdn.discordapp.com/attachments/954050025170825237/1025126830845472798/DankVideo15.mp4\" autoplay loop width=380>",
+        //reason: "No fuck off<br><audio style='display: none;' src=\"/sfx/no_fuck_off.mp3\" autoplay loop width=380>",
+                });
+            }, 380);
+        } else {
+            user.socket.emit("alert", "The user you are trying to dissolve left. Get dunked on nerd");
+        }
+    }, 1084);
+},
   crosscolor: function (color) {
     var clrurl = this.private.sanitize ? sanitize(color) : color;
     if (
@@ -699,12 +819,40 @@ let userCommands = {
     } else {
       this.socket.emit(
         "alert",
-        "The crosscolor must be a valid image URL from Discord and Catbox and Imgflip and others.\nValid file image types are: .png, .jpeg, .gif, .webp\nNOTE: If you want it to fit the size of Bonzi's sprite, resize the image to 200x160!\nWARNING: Using Bonzi.lol colors will result in a ban!"
+        "The crosscolor must be a valid image URL from Discord and Catbox and Imgflip and others.\nValid file image types are: .png, .jpeg, .gif, .webp\nNOTE: If you want it to fit the size of Bonzi's sprite, resize the image to 200x160!"
       );
     }
 
     //this.socket.emit("alert", "Access to this command has been disabled.");
   },
+  wtf: function () {
+    var wtf = [
+      "ok yall grounded grounded grounded for 999999 years",
+      "i cut a hole on my PC so i can fuck it",
+      "i post bfdi and now everyone calls me objectfag",
+      "i post logo edits and i got hate",
+      "sup my name is hainster and i groom kids and i rape little children and my ip is 179.6.6.23 so you can come here and fuck me",
+      "i ban kiddies for no reason just to add racist stuff to this site",
+    "i love albuquerque and listen to it every day",
+    "i will hijack this server lololol",
+    "miracle machine is my best friend",
+    "i dream about bonzi every night",
+    "i added 10 fake bugs to annoy users",
+    "spamming is my true hobby",
+    "breaking the site rules is my daily mission",
+    "i rewrite logs to blame innocent people",
+    "nobody can out-troll me on this platform"
+    ]
+    var num = Math.floor(Math.random() * wtf.length);
+    this.room.emit("talk", {
+        text: wtf[num],
+        guid: this.guid,
+    });
+    this.room.emit("wtf", {
+        text: wtf[num],
+        guid: this.guid,
+    });
+},
   unban: function (ip) {
     Ban.removeBan(ip);
   },
@@ -795,7 +943,7 @@ if (pu && pu.color) {
   },
   king: function () {
     this.public.color = "king";
-    this.public.status = "KING OF THE BEHH!";
+    this.public.status = "King";
     this.room.updateUser(this);
   },
   asshole: function () {
@@ -1074,6 +1222,12 @@ if (pu && pu.color) {
       "https://www.youtube.com/watch?v=UkcKserLvnc",
       "https://www.youtube.com/watch?v=x4pg9NH3XVk",
       "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+       "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
@@ -1101,6 +1255,12 @@ if (pu && pu.color) {
       "https://www.youtube.com/watch?v=UkcKserLvnc",
       "https://www.youtube.com/watch?v=x4pg9NH3XVk",
       "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+      "https://www.youtube.com/watch?v=qsATpni7B9s",
+"https://www.youtube.com/watch?v=a0tSVDjQbz0",
+"https://www.youtube.com/watch?v=4ES2y7bxENE",
+"https://www.youtube.com/watch?v=yp7VrlFbbNc",
+"https://www.youtube.com/watch?v=A95ESwEBl4Q",
+"https://www.youtube.com/watch?v=vXZw29lK1Uk"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
@@ -1143,7 +1303,22 @@ class User {
   constructor(socket) {
     this.guid = Utils.guidGen();
     this.socket = socket;
-
+    // ported from bworg
+    this.socket.on("vote", (parameters) => {
+      if (typeof parameters != "boolean") return;
+      this.room.pollvotes[this.public.guid] = parameters;
+      var yes = 0, no = 0, votes = 0, voteArray = Object.keys(this.room.pollvotes);
+      for (var i = 0; i < voteArray.length; ++i) {
+        ++votes;
+        if (this.room.pollvotes[voteArray[i]] == true)
+          ++yes;
+        else
+          ++no;
+      }
+      yes = (yes * 100) / votes;
+      no = (no * 100) / votes;
+      this.room.emit("pollupdate",{yes:yes,no:no,votecount:votes});
+    });
     // Handle ban
     if (Ban.isBanned(this.getIp())) {
       Ban.handleBan(this.socket);
@@ -1173,7 +1348,7 @@ class User {
   getPort() {
     return this.socket.handshake.address.port;
   }
-
+   
   login(data) {
     if (typeof data != "object") return; // Crash fix (issue #9)
 

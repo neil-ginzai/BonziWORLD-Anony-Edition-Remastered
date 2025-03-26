@@ -1060,12 +1060,38 @@ body.vaporwave #chat_send:active {
   padding-top: 3px;
   width: 22px;
 }
-
+button  {
+  padding-bottom: 3.2px;
+  padding-top: 3.2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Pixelated MS Sans Serif", Arial;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: 1px solid #5c0075;
+  background: linear-gradient(180deg, #fff, #ecebe5 86%, #d8d0c4);
+  box-shadow: none;
+  border-radius: 3px;
+}
+button:not(:disabled).active, button:not(:disabled):active  {
+  box-shadow: none;
+  background: linear-gradient(180deg, #cdcac3, #e3e3db 8%, #e5e5de 94%, #f2f2f1);
+}
+button:not(:disabled):hover  {
+  box-shadow: inset -1px 1px #f5d1ff, inset 1px 2px #de86fd, inset -2px 2px #bd60fb, inset 2px -2px #9e19e6;
+}
+button.focused, button:focus  {
+  box-shadow: inset -1px 1px #edccff, inset 1px 2px #e999ea, inset -2px 2px #efbcf5, inset 1px -1px #da8be5, inset 2px -2px #e38be5;
+}
+button::-moz-focus-inner  {
+  border: 0;
+}
 .chat_bar_top {
   top: 0;
 }
 ::selection  {
-  background: #b72be38c;
+  background: #2b5ce38c;
 }
 #chat_send {
   width: 100px;
@@ -1314,7 +1340,22 @@ body.vaporwave #chat_send:active {
   box-sizing: border-box;
   overflow: auto;
 }
-
+ #pollyes, #pollno{
+      width:100%;
+      font-size:19px;
+      box-sizing: border-box;
+      padding: 5px 4px;
+      color:black;
+      overflow:visible;
+  }
+  #pollyes{
+      width:1%;
+      background-color:rgba(0,255,0,0.3);
+  }
+  #pollno{
+      background-color:rgba(255,0,0,0.3);
+      width:1%;
+  }
 #page_error,
 #page_ban,
 #page_unsupp {
