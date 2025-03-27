@@ -28,14 +28,14 @@ Yes, there are.
 
 I expect these users to read the rules for the website in this readme md file on my github respiratory.
 - **Do not raid this site**. Raiding can literally cause the service to get unhealthy on onrender.com, but then, if you have been caught, you can get you kicked, or banned immediately.
-- **No NSFW content allowed**. It is prohibited. This includes pornography. Punishment: Banned/Nuked/Jewifyed. Otherwise kicked.
-- **No flooding**. Flood only in the room ID: "flood-room". If you have been caught flooding in public room, punishment: Banned/Nuked/Jewifyed.
+- **No NSFW content allowed**. It is prohibited. This includes pornography. Punishment: Banned/Nuked. Otherwise kicked.
+- **No flooding**. Flood only in the room ID: "flood-room". If you have been caught flooding in public room, punishment: Banned/Nuked.
 - **No spamming unless it is okay**. Punishments: either muted, kicked or banned
-- **No leaking the godword**. Doing this will immediately result in a different godmode password. Punishment: Kicked/Banned/Nuked/Jewifyed
-- **No Baby Einstein**. No, fuck Baby Einstein. Okay, seriously, why in holy hell do you need that child shit? Baby Einstein is for kiddies and noobs. Do not post content related to Baby Einstein. Punishment: Muted/kicked/banned/Nuked/Jewifyed
-- **No Friday Night Funkin'**. The game's characters and fan-made characters is used by people for breaking this rule. Any sightings of FNF that are seen by admins will result in a kick or ban or jewify or nuke. If you are known as Hungaryball/Geri/Whitty/Anything, you will be banned.
+- **No leaking the godword**. Doing this will immediately result in a different godmode password. Punishment: Kicked/Banned/Nuked
+- **No Baby Einstein**. No, fuck Baby Einstein. Okay, seriously, why in holy hell do you need that child shit? Baby Einstein is for kiddies and noobs. Do not post content related to Baby Einstein. Punishment: Muted/kicked/banned/Nuked
+- **No Friday Night Funkin'**. The game's characters and fan-made characters is used by people for breaking this rule. Any sightings of FNF that are seen by admins will result in a kick or ban or nuke. If you are known as Hungaryball/Geri/Whitty/Anything, you will be banned.
 - **No PinkFong**. The company's characters is used by people for breaking this rule (i.e. posting videos such as the Potty Song). Any sightings of PinkFong that are seen by admins will result in a kick. If you are known as PinkFong/Hogi/Baby Shark/Jeni/Bebefinn/Bebba/Poki/Ninimo/Anything, you will be banned.
-- **No PBS Kids**. Do not post content related to PBS Kids. I do not tolerate any PBS Kids-related content. Posting these videos can get you muted, kicked,nuked, doggifyed, jewifyed or banned immediately.
+- **No PBS Kids**. Do not post content related to PBS Kids. I do not tolerate any PBS Kids-related content. Posting these videos can get you muted, kicked,nuked, doggifyed, or banned immediately.
 
 Violation of these rules/guidelines will result in a mute, a kick and/or a ban.
 

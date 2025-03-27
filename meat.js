@@ -50,12 +50,21 @@ var videoIdsCommercials = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs", 
+  "https://www.youtube.com/watch?v=qsATpni7B9s",
 "https://www.youtube.com/watch?v=a0tSVDjQbz0",
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
 ];
 var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -75,7 +84,15 @@ var videoIds4PM2430PM = [
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
 ];
 var videoIds5PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -95,7 +112,15 @@ var videoIds5PM = [
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
 ];
 var videoIds7PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -115,7 +140,15 @@ var videoIds7PM = [
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
 ];
 var videoIds6PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -135,7 +168,15 @@ var videoIds6PM = [
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
 ];
 var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -155,7 +196,15 @@ var videoIds25MinutesofMSAgent = [
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
 ];
 
 const Ban = require("./ban.js");
@@ -426,7 +475,7 @@ class Room {
       this.users.splice(userIndex, 1);
 
       checkRoomEmpty(this);
-    } catch (e) {}
+    } catch (e) {} 
   }
 
   updateUser(user) {
@@ -438,7 +487,7 @@ class Room {
 
   getUsersPublic() {
     let usersPublic = {};
-    this.users.forEach((user) => {
+    this.users.forEach((user) =>{
       usersPublic[user.guid] = user.public;
     });
     return usersPublic;
@@ -729,30 +778,6 @@ let userCommands = {
       this.socket.emit(
         "alert",
         "The user you are trying to niggify left. Get dunked on nerd"
-      );
-    }
-  },
-  jewify: function (data) {
-    if (this.private.runlevel < 3) {
-      this.socket.emit("alert", "admin=true");
-      return;
-    }
-
-    let pu = this.room.getUsersPublic()[data];
-    if (pu && pu.color) {
-      let target;
-      this.room.users.map((n) => {
-        if (n.guid == data) {
-          target = n;
-        }
-      });
-      target.socket.emit("jewify", {
-        reason: "You got banned.",
-      });
-    } else {
-      this.socket.emit(
-        "alert",
-        "The user you are trying to jewify left. Get dunked on nerd"
       );
     }
   },
@@ -1227,11 +1252,20 @@ if (pu && pu.color) {
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
+    this.room.emit("BonziTVTheme");
     this.room.emit("replaceTVWithURL", {
       id: vidId,
       identId: bonziTvIdent[ident].replace(
@@ -1260,11 +1294,20 @@ if (pu && pu.color) {
 "https://www.youtube.com/watch?v=4ES2y7bxENE",
 "https://www.youtube.com/watch?v=yp7VrlFbbNc",
 "https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk"
+"https://www.youtube.com/watch?v=vXZw29lK1Uk",
+"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+"https://www.youtube.com/watch?v=DD2xYpxXndw",
+"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+"https://www.youtube.com/watch?v=c_F9mHfsyMI",
+"https://www.youtube.com/watch?v=2vRrNYarBiU",
+"https://www.youtube.com/watch?v=6pATxytAt40",
+"https://www.youtube.com/watch?v=Bbn13Qegghs",
+"https://www.youtube.com/watch?v=QFkksPZmtMU"
     ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
+    this.room.emit("BonziTVTheme");
     this.room.emit("replaceTVWithURL", {
       id: vidId,
       identId: bonziTvIdent[ident].replace(
