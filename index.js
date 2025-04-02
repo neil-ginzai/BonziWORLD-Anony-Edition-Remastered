@@ -31,6 +31,12 @@ const settings = require("./settings.json");
 var express = require("express");
 var app = express();
 if (settings.express.serveStatic) app.use(express.static("./build/www"));
+app.get('/readme.html', function(req, res) {
+  res.sendFile(__dirname + '/build/www/readme/index.html');
+});
+app.get('/rules.html', function(req, res) {
+  res.sendFile(__dirname + '/build/www/rules/index.html');
+});
 var server = require("http").createServer(app);
 
 // Init socket.io

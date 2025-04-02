@@ -1,9 +1,9 @@
 var io = require("socket.io-client");
-var socket = io("//");
+var socket = io("https://sturdy-potato-97w6q4r5qxwph7xp5-3000.app.github.dev/");
 socket.emit("login", { name: "AnonyBOT | +help" });
 socket.on("reconnected", reconnected);
 var reconnected = function () {
-  var socket = io("//");
+  var socket = io("https://sturdy-potato-97w6q4r5qxwph7xp5-3000.app.github.dev/");
   socket.emit("login", { name: "AnonyBOT | +help" });
   socket.on("talk", function (data) {
     var text = data.text;
@@ -77,7 +77,7 @@ var commands = {
   },
   mock(txt) {
     if (txt.startsWith("+")) {
-      return "hahahaha nice joke lmao hahaha"
+      return "hahahaha nice joke lmao hahaha- fuck you."
         .split("")
         .map((n) => {
           if (Math.random() > 0.5) return n.toUpperCase();
