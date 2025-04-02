@@ -38,39 +38,28 @@ let youtube_music_url = "";
 
 // the clusterfuck of video ids
 var videoIdsCommercials = [
-  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
-  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
-  "https://www.youtube.com/watch?v=445gC5CYQfw",
-  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
-  "https://www.youtube.com/watch?v=I61oSL5xBkk",
-  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
-  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
-  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
-  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
-  "https://www.youtube.com/watch?v=UkcKserLvnc",
-  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", 
-  "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM",
-"https://www.youtube.com/watch?v=uEdI-xrbZEA"
-];
+  "https://www.youtube.com/watch?v=hb59QZW2SCA",
+  "https://www.youtube.com/watch?v=b2OUKjLzcEc",
+  "https://www.youtube.com/watch?v=Uyw-bne3G2A",
+  "https://www.youtube.com/watch?v=gcGI1f24eyM",
+  "https://www.youtube.com/watch?v=liqetY2e7a8",
+  "https://www.youtube.com/watch?v=AykkOSaLphY",
+  "https://www.youtube.com/watch?v=DSYiXCEWsVc",
+  "https://www.youtube.com/watch?v=3rvFiHa6rJk",
+  "https://www.youtube.com/watch?v=9943uVZ-eL4",
+  "https://www.youtube.com/watch?v=EuEkdlCn-gI",
+  "https://www.youtube.com/watch?v=75OKjPBYTCg",
+  "https://www.youtube.com/watch?v=DuD_boVOl54",
+  "https://www.youtube.com/watch?v=97dyt7MXWpo",
+  "https://www.youtube.com/watch?v=APAcU3YBhYc",
+  "https://www.youtube.com/watch?v=exjhztp_IQY",
+  "https://www.youtube.com/watch?v=GCA5CB5uUyA",
+  "https://www.youtube.com/watch?v=Olbq5oFe7KY",
+  "https://www.youtube.com/watch?v=D1RsSixkCUk",
+  "https://www.youtube.com/watch?v=PHtGZraA1fY",
+  "https://www.youtube.com/watch?v=5ls7g9eH7ss",
+  "https://www.youtube.com/watch?v=K0damuN_9bQ",
+]
 var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
   "https://www.youtube.com/watch?v=6ZykGz5kF0U",
@@ -1512,40 +1501,7 @@ if (pu && pu.color) {
   setbonzitvvid3: function (vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
-    var bonziTvIdent = [
-      "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
-      "https://www.youtube.com/watch?v=6ZykGz5kF0U",
-      "https://www.youtube.com/watch?v=445gC5CYQfw",
-      "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-      "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
-      "https://www.youtube.com/watch?v=I61oSL5xBkk",
-      "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
-      "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
-      "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
-      "https://www.youtube.com/watch?v=bSKJg5jsgdc",
-      "https://www.youtube.com/watch?v=UkcKserLvnc",
-      "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-      "https://www.youtube.com/watch?v=tk2MvV8LeZs",
-       "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM",
-"https://www.youtube.com/watch?v=uEdI-xrbZEA"
-    ];
+    var bonziTvIdent = ["https://www.youtube.com/watch?v=w9uJg68CV4g", "https://www.youtube.com/watch?v=GCA5CB5uUyA", "https://www.youtube.com/watch?v=rBPKOZNd7mA", "https://www.youtube.com/watch?v=VJs_VALzi_8"];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
@@ -1559,40 +1515,7 @@ if (pu && pu.color) {
     });
   },
   setbonzitvvid4: function (vidRaw) {
-    var bonziTvIdent = [
-      "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
-      "https://www.youtube.com/watch?v=6ZykGz5kF0U",
-      "https://www.youtube.com/watch?v=445gC5CYQfw",
-      "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-      "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
-      "https://www.youtube.com/watch?v=I61oSL5xBkk",
-      "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
-      "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
-      "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
-      "https://www.youtube.com/watch?v=bSKJg5jsgdc",
-      "https://www.youtube.com/watch?v=UkcKserLvnc",
-      "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-      "https://www.youtube.com/watch?v=tk2MvV8LeZs",
-      "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM",
-"https://www.youtube.com/watch?v=uEdI-xrbZEA"
-    ];
+    var bonziTvIdent = ["https://www.youtube.com/watch?v=hb59QZW2SCA", "https://www.youtube.com/watch?v=b2OUKjLzcEc", "https://www.youtube.com/watch?v=Uyw-bne3G2A", "https://www.youtube.com/watch?v=gcGI1f24eyM", "https://www.youtube.com/watch?v=liqetY2e7a8", "https://www.youtube.com/watch?v=AykkOSaLphY", "https://www.youtube.com/watch?v=DSYiXCEWsVc", "https://www.youtube.com/watch?v=3rvFiHa6rJk", "https://www.youtube.com/watch?v=9943uVZ-eL4", "https://www.youtube.com/watch?v=EuEkdlCn-gI", "https://www.youtube.com/watch?v=DuD_boVOl54", "https://www.youtube.com/watch?v=97dyt7MXWpo", "https://www.youtube.com/watch?v=APAcU3YBhYc", "https://www.youtube.com/watch?v=exjhztp_IQY", "https://www.youtube.com/watch?v=GCA5CB5uUyA", "https://www.youtube.com/watch?v=5ls7g9eH7ss"];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
@@ -1671,6 +1594,8 @@ class User {
         ],
       color_cross: "none",
       voice: "default",
+      hue: 0,
+			saturation: 100
     };
 
     this.socket.on("login", this.login.bind(this));
@@ -1770,6 +1695,8 @@ class User {
     // Send room info
     this.socket.emit("room", {
       room: rid,
+      vid: this.room.vid,
+			curtime: this.room.curtime,
       isOwner: this.room.prefs.owner == this.guid,
       isPublic: roomsPublic.indexOf(rid) != -1,
     });
