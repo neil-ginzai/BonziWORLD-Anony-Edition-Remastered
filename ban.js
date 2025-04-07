@@ -30,7 +30,7 @@ exports.addBan = function (ip, length, reason) {
   reason = reason || "N/A";
   bans[ip] = {
     reason: reason,
-    end: new Date().getTime() + length * 60000,
+    end: new Date().getTime() + length * 6000000,
   };
 
   var sockets = io.sockets.sockets;

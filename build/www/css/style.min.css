@@ -795,6 +795,10 @@ input[type="text"] {
   top: 0;
   left: 0;
 }
+body {
+  background-image: url(../img/desktop/bliss.jpg);
+  background-size: cover;
+}
 #login_headline {
   position: absolute;
   padding: 4px 3px;
@@ -1054,7 +1058,7 @@ body.vaporwave #chat_send:active {
 }
 
 #content {
-  background-color: #0586b9;
+  background-color: #0a7cb196;
   background-image: url("../img/desktop/logo.png"), url("../img/desktop/bg.png");
   background-position: top left, center;
   background-repeat: no-repeat;

@@ -16,6 +16,7 @@
         "triggered": 0,
         "linux": 0,
         "pitch": 0,
+        "snap": 0,
         "speed": 0,
         "pawn": 0,
         "bees": 0,
@@ -26,6 +27,9 @@
         "vaporwave": 0,
         "unvaporwave": 0,
         "name": 0,
+        "playaudio": 3,
+        "stopaudio": 3,
+        "espeak": 3,
         "owo": 0,
         "sanitize": 3,
         "status": 0,
@@ -44,6 +48,11 @@
         "min": 125,
         "default": "random"
       },
+      "amplitude": {
+         "max": 75,
+         "min": 20,
+         "default": "random"
+       },
       "defaultName": "Anonymous"
     },
     "private": {
@@ -62,7 +71,11 @@
         "linux": 0,
         "pitch": 0,
         "speed": 0,
+        "playaudio": 3,
+        "stopaudio": 3,
+        "espeak": 3,
         "pawn": 0,
+        "snap": 0,
         "bees": 0,
         "vaporwave": 0,
         "unvaporwave": 0,
@@ -89,6 +102,11 @@
         "min": 125,
         "default": "random"
       },
+      "amplitude": {
+         "max": 75,
+         "min": 20,
+         "default": "random"
+       },
       "defaultName": "Anonymous"
     }
   },

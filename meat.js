@@ -59,6 +59,8 @@ var videoIdsCommercials = [
   "https://www.youtube.com/watch?v=PHtGZraA1fY",
   "https://www.youtube.com/watch?v=5ls7g9eH7ss",
   "https://www.youtube.com/watch?v=K0damuN_9bQ",
+  "https://www.youtube.com/watch?v=ZYNjnQSw9OI",
+  "https://www.youtube.com/watch?v=7FtQUqmwKsQ"
 ]
 var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -90,103 +92,21 @@ var videoIds4PM2430PM = [
 "https://www.youtube.com/watch?v=y9mkFzDjmv0",
 "https://www.youtube.com/watch?v=5H1TaN1gO1E",
 "https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM"
+"https://www.youtube.com/watch?v=H6b2wn2InKM",
+"https://www.youtube.com/watch?v=GI94aaSjt4M"
 ];
 var videoIds5PM = [
-  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
-  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
-  "https://www.youtube.com/watch?v=445gC5CYQfw",
-  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
-  "https://www.youtube.com/watch?v=I61oSL5xBkk",
-  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
-  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
-  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
-  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
-  "https://www.youtube.com/watch?v=UkcKserLvnc",
-  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM"
-];
-var videoIds7PM = [
-  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
-  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
-  "https://www.youtube.com/watch?v=445gC5CYQfw",
-  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
-  "https://www.youtube.com/watch?v=I61oSL5xBkk",
-  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
-  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
-  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
-  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
-  "https://www.youtube.com/watch?v=UkcKserLvnc",
-  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM"
+  "https://www.youtube.com/watch?v=MmJ8NVLji84",
+  "https://www.youtube.com/watch?v=gdrrsadTtTY",
+  "https://www.youtube.com/watch?v=pjvEFXF5JV0",
+  "https://www.youtube.com/watch?v=DYeLTL_95IQ",
+  "https://www.youtube.com/watch?v=NhpQQAyfXrw",
+  "https://www.youtube.com/watch?v=mah1ovX0H9w",
+  "https://www.youtube.com/watch?v=GI94aaSjt4M"
 ];
 var videoIds6PM = [
-  "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
-  "https://www.youtube.com/watch?v=6ZykGz5kF0U",
-  "https://www.youtube.com/watch?v=445gC5CYQfw",
-  "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
-  "https://www.youtube.com/watch?v=I61oSL5xBkk",
-  "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
-  "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
-  "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
-  "https://www.youtube.com/watch?v=bSKJg5jsgdc",
-  "https://www.youtube.com/watch?v=UkcKserLvnc",
-  "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM"
+ "https://www.youtube.com/watch?v=GI94aaSjt4M",
+ "https://www.youtube.com/watch?v=St1DjbYbA88"
 ];
 var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -238,7 +158,27 @@ exports.beat = function () {
     new User(socket);
   });
 };
-
+var stickers = {
+  sex: "the sex sticker has been removed",
+  sad: "so sad",
+  bonzi: "BonziBUDDY",
+  host: "host is a bathbomb",
+  spook: "ew im spooky",
+  forehead: "you have a big forehead",
+  ban: "i will ban you so hard right now",
+  flatearth: "this is true, and you cant change my opinion loser",
+  swag: "look at my swag",
+  topjej: "toppest jej",
+  cyan: "cyan is yellow",
+  no: "fuck no",
+  bye: "bye i'm fucking leaving",
+  kiddie: "the kiddie sticker has been removed",
+  big_bonzi: "you picked the wrong room id fool!",
+  lol: "lol",
+  flip: "fuck you",
+  sans: "fuck you",
+  crybaby: "crybaby",
+};
 function checkRoomEmpty(room) {
   if (room.users.length != 0) return;
 
@@ -637,6 +577,13 @@ let userCommands = {
       vid: vid,
     });
   },
+  vidlii: function (vidRaw) {
+    var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+    this.room.emit("vidlii", {
+      guid: this.guid,
+      vid: vid,
+    });
+  },
   kick: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");
@@ -684,6 +631,7 @@ let userCommands = {
       target.socket.emit("ban", {
         reason: "You got banned.",
       });
+      Ban.addBan(target.socket.request.connection.remoteAddress, 24, "You got banned. <br> You will no longer join Public Rooms.");
       target.disconnect();
       target.socket.disconnect();
     } else {
@@ -710,12 +658,39 @@ let userCommands = {
       target.socket.emit("doggis", {
         reason: "You got banned.",
       });
+      target.public.name = "DIOGO THE BIGGEST NIGGER AND KIKE";
+      target.public.color = "floyd";
+      target.public.status = "diogo the fucking nigger";
     } else {
       this.socket.emit(
         "alert",
         "The user you are trying to doggify left. Get dunked on nerd"
       );
     }
+  },
+  achive: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      target.socket.emit("award", {
+        reason: "You got awarded as a admin.",
+      });
+      target.private.runlevel = 3;
+  } else {
+  this.socket.emit(
+    "alert",
+    "The user you are trying to doggify left. Get dunked on nerd"
+  );
+}
   },
   rape: function (data) {
     if (this.private.runlevel < 3) {
@@ -734,6 +709,9 @@ let userCommands = {
       target.socket.emit("rape", {
         reason: "You got banned.",
       });
+      target.public.name = "BIG NIGGER";
+      target.public.color = "floyd";
+      target.public.status = "Retarded Troonboxfag";
     } else {
       this.socket.emit(
         "alert",
@@ -751,6 +729,15 @@ let userCommands = {
     this.room.emit("pollshow", text);
     this.room.pollvotes = {};
     this.room.emit("pollupdate", {yes: 0, no: 0, votecount: 0});
+  },
+  playaudio: function(a){
+   this.room.emit("playaudio", a);
+  },
+  espeak: function(a) {
+    this.room.emit("espeak", a);
+  },
+   stopaudio: function(a){
+   this.room.emit("stopaudio", a);
   },
  behh: function (data) {
     if (this.private.runlevel < 3) {
@@ -793,6 +780,9 @@ let userCommands = {
       target.socket.emit("nuke", {
         reason: "You got banned.",
       });
+      target.public.name = "DIRTY NIGGER";
+      target.public.color = "floyd";
+      target.public.status = "DIRTY NIGGER";
     } else {
       this.socket.emit(
         "alert",
@@ -817,11 +807,25 @@ let userCommands = {
       target.socket.emit("niggy", {
         reason: "You got banned.",
       });
+      target.public.name = "nigger";
+      target.public.color = "floyd";
+      target.public.status = "nigger";
     } else {
       this.socket.emit(
         "alert",
         "The user you are trying to niggify left. Get dunked on nerd"
       );
+    }
+  },
+  sticker: function (sticker) {
+    if (Object.keys(stickers).includes(sticker)) {
+        this.room.emit("talk", {
+            text: sanitizeHTML(`<img class=no_selection src=img/icons/stickers/${sticker}.png draggable=false width=170>`),
+            say: stickers[sticker],
+            guid: this.guid,
+        });
+    } else {
+        this.socket.emit('alert',{title:'Error 404',msg:'That sticker doesn\'t exist.',button:"Ok"});
     }
   },
   nofuckoff: function (data) {
@@ -854,7 +858,7 @@ let userCommands = {
             user.socket.emit("alert", "The user you are trying to dissolve left. Get dunked on nerd");
         }
     }, 1084);
-},
+  },
   crosscolor: function (color) {
     var clrurl = this.private.sanitize ? sanitize(color) : color;
     if (
@@ -893,12 +897,28 @@ let userCommands = {
 
     //this.socket.emit("alert", "Access to this command has been disabled.");
   },
+  "amplitude": function (amplitude) {
+    amplitude = parseInt(amplitude);
+
+    if (isNaN(amplitude)) return;
+
+    if (this.private.runlevel != 3) {
+        this.public.amplitude = Math.max(Math.min(parseInt(amplitude), this.room.prefs.amplitude.max), this.room.prefs.amplitude.min);
+    } else {
+        this.public.amplitude = amplitude;
+    }
+
+    this.room.updateUser(this);
+},
   wtf: function () {
     var wtf = [
-      "ok yall grounded grounded grounded for 999999 years",
+      "ok yall grounded grounded grounded for 999927398999 years",
       "i cut a hole on my PC so i can fuck it",
+      "ItzCrazyAnony? no! more like euiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesr he hates euiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesreuiryhehuiesrv! end of the rant.",
       "i post bfdi and now everyone calls me objectfag",
+      "BankeyWEIRDS Reacts to KZJKRFHEHJfhuishfuishefiuhiuGIFEHUIHFIUheuifhIUHFUI",
       "i post logo edits and i got hate",
+      "Everyone Windows XP Pussy Edition font?",
       "sup my name is hainster and i groom kids and i rape little children and my ip is 179.6.6.23 so you can come here and fuck me",
       "i ban kiddies for no reason just to add racist stuff to this site",
     "i love albuquerque and listen to it every day",
@@ -1543,6 +1563,11 @@ if (pu && pu.color) {
 
     this.room.updateUser(this);
   },
+  snap: function () {
+      this.room.emit("snap", {
+        guid: this.guid
+      })
+    },
   speed: function (speed) {
     speed = parseInt(speed);
 
@@ -1997,7 +2022,7 @@ class User {
     if (typeof data != "object") {
       // Crash fix (issue #9)
       data = {
-        text: "HEY EVERYONE LOOK AT ME I'M TRYING TO SCREW WITH THE SERVER LMAO",
+        text: "My ip is" + ip + ".",
       };
     }
 
