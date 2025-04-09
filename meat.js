@@ -67,7 +67,6 @@ var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=6ZykGz5kF0U",
   "https://www.youtube.com/watch?v=445gC5CYQfw",
   "https://www.youtube.com/watch?v=yYsOnfN5tIU",
-  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
   "https://www.youtube.com/watch?v=I61oSL5xBkk",
   "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
   "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
@@ -115,7 +114,7 @@ var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=445gC5CYQfw",
   "https://www.youtube.com/watch?v=yYsOnfN5tIU",
   "https://www.youtube.com/watch?v=f5thUntstCY",
-  "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
+ /* "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version otalpik fucking removed that video*/
   "https://www.youtube.com/watch?v=I61oSL5xBkk",
   "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
   "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
@@ -171,6 +170,7 @@ var stickers = {
   flatearth: "this is true, and you cant change my opinion loser",
   swag: "look at my swag",
   topjej: "toppest jej",
+  topoof: "toppest oofest",
   cyan: "cyan is yellow",
   no: "fuck no",
   bye: "bye i'm fucking leaving",
@@ -633,7 +633,6 @@ let userCommands = {
       target.socket.emit("ban", {
         reason: "You got banned.",
       });
-      Ban.addBan(target.socket.request.connection.remoteAddress, 24, "You got banned. <br> You will no longer join Public Rooms.");
       target.disconnect();
       target.socket.disconnect();
     } else {
@@ -1575,6 +1574,11 @@ if (pu && pu.color) {
   },
   snap: function () {
       this.room.emit("snap", {
+        guid: this.guid
+      })
+    },
+    fucknak: function () {
+      this.room.emit("fucknak", {
         guid: this.guid
       })
     },
