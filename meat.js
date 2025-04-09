@@ -106,13 +106,15 @@ var videoIds5PM = [
 ];
 var videoIds6PM = [
  "https://www.youtube.com/watch?v=GI94aaSjt4M",
- "https://www.youtube.com/watch?v=St1DjbYbA88"
+ "https://www.youtube.com/watch?v=St1DjbYbA88",
+ "https://www.youtube.com/watch?v=f5thUntstCY"
 ];
 var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
   "https://www.youtube.com/watch?v=6ZykGz5kF0U",
   "https://www.youtube.com/watch?v=445gC5CYQfw",
   "https://www.youtube.com/watch?v=yYsOnfN5tIU",
+  "https://www.youtube.com/watch?v=f5thUntstCY",
   "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version
   "https://www.youtube.com/watch?v=I61oSL5xBkk",
   "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
@@ -688,7 +690,7 @@ let userCommands = {
   } else {
   this.socket.emit(
     "alert",
-    "The user you are trying to doggify left. Get dunked on nerd"
+    "The user you are trying to achieve left. Get dunked on nerd"
   );
 }
   },
@@ -1511,6 +1513,14 @@ if (pu && pu.color) {
   setbonzitvvid2: function (vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
+    var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+    this.room.vid = vidId;
+    this.room.emit("replaceTVWithURL", {
+      id: vidId,
+      identId: vidId,
+    });
+  },
+  setbonzitvvid5: function (vidRaw) {
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
     this.room.emit("replaceTVWithURL", {
