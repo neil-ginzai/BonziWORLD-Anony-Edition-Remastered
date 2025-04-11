@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.fa-arrow-right:before  {
+  bottom: -0.5px;
+  position: relative;
+}
 body,
 html {
   width: 100%;
@@ -827,9 +831,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: (0px 0px 13px 5px rgba(172, 172, 172, 0.5));
-  cursor:pointer;
-  filter: drop-shadow(0px 0px 10px rgba(230, 230, 230, 0.5));
   -webkit-user-select: none;
   user-select: none;
 }
@@ -1247,29 +1248,40 @@ button::-moz-focus-inner  {
   left: 16px;
   font-size: 12px;
 }
-
-#login_go {
-  animation: fadeIn 3s;
-  left: 185px;
-  top: 24px;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/logon/go.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+ #login_go  {
+        animation: fadeIn 1s;
+        left: 185px;
+        top: 33%;
+        position: absolute;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        color: #F5F5F5;
+        border: solid 1px #FAFAFA;
+        background-repeat: no-repeat;
+        background-color: #27ae60;
+    }
+    #login_go:hover, #login_go:active, #login_go:target  {
+        border: solid 1px #FFF;
+        color: #FAFAFA;
+        background-color: #2ecc71;
+    }
+    #login_go  {
+        top: 33%;
+        background-color: #FBC02D;
+    }
+    #login_go:hover, #login_go:active, #login_go:target  {
+        background-color: #FDD835;
 }
-#login_go:hover {
-  background-position: 0 -20px;
-}
-#login_go:active {
-  background-position: 0 -40px;
-}
-
 #login_load {
   animation: fadeIn 3s;
   color: #fff;
   font-weight: bold;
+  cursor: wait;
   font-style: italic;
   font-size: 35px;
   letter-spacing: 2px;

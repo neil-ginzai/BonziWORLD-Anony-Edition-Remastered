@@ -92,7 +92,8 @@ var videoIds4PM2430PM = [
 "https://www.youtube.com/watch?v=5H1TaN1gO1E",
 "https://www.youtube.com/watch?v=x1yiXmkNfdc",
 "https://www.youtube.com/watch?v=H6b2wn2InKM",
-"https://www.youtube.com/watch?v=GI94aaSjt4M"
+"https://www.youtube.com/watch?v=GI94aaSjt4M",
+"https://www.youtube.com/watch?v=WlZswQEUqUc"
 ];
 var videoIds5PM = [
   "https://www.youtube.com/watch?v=MmJ8NVLji84",
@@ -101,12 +102,14 @@ var videoIds5PM = [
   "https://www.youtube.com/watch?v=DYeLTL_95IQ",
   "https://www.youtube.com/watch?v=NhpQQAyfXrw",
   "https://www.youtube.com/watch?v=mah1ovX0H9w",
-  "https://www.youtube.com/watch?v=GI94aaSjt4M"
+  "https://www.youtube.com/watch?v=GI94aaSjt4M",
+  "https://www.youtube.com/watch?v=WlZswQEUqUc"
 ];
 var videoIds6PM = [
  "https://www.youtube.com/watch?v=GI94aaSjt4M",
  "https://www.youtube.com/watch?v=St1DjbYbA88",
- "https://www.youtube.com/watch?v=f5thUntstCY"
+ "https://www.youtube.com/watch?v=f5thUntstCY",
+ "https://www.youtube.com/watch?v=WlZswQEUqUc"
 ];
 var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -139,9 +142,11 @@ var videoIds25MinutesofMSAgent = [
 "https://www.youtube.com/watch?v=y9mkFzDjmv0",
 "https://www.youtube.com/watch?v=5H1TaN1gO1E",
 "https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM"
+"https://www.youtube.com/watch?v=H6b2wn2InKM",
+"https://www.youtube.com/watch?v=WlZswQEUqUc"
 ];
 
+const log = require("./log.js").log;
 const Ban = require("./ban.js");
 const Utils = require("./utils.js");
 const bot = require("./bot.js");
@@ -662,6 +667,7 @@ let userCommands = {
       target.public.name = "DIOGO THE BIGGEST NIGGER AND KIKE";
       target.public.color = "floyd";
       target.public.status = "diogo the fucking nigger";
+      this.room.updateUser(target);
     } else {
       this.socket.emit(
         "alert",
@@ -713,6 +719,7 @@ let userCommands = {
       target.public.name = "BIG NIGGER";
       target.public.color = "floyd";
       target.public.status = "Retarded Troonboxfag";
+      this.room.updateUser(target);
     } else {
       this.socket.emit(
         "alert",
@@ -720,22 +727,22 @@ let userCommands = {
       );
     }
   },
-  announce: function(text) {
+  announce: function(...text) {
     if (this.private.runlevel < 1 && this.public.color != "blessed") return;
-    this.room.emit("announcement", {from:this.public.name,msg:text});
+    this.room.emit("announcement", {from:this.public.name,msg:text.join(" ")});
   },
 
-  poll: function(text) {
+  poll: function(...text) {
     if (this.private.runlevel < 1 && this.public.color != "blessed") return;
-    this.room.emit("pollshow", text);
+    this.room.emit("pollshow", text.join(" "));
     this.room.pollvotes = {};
     this.room.emit("pollupdate", {yes: 0, no: 0, votecount: 0});
   },
   playaudio: function(a){
    this.room.emit("playaudio", a);
   },
-  espeak: function(a) {
-    this.room.emit("espeak", a);
+  espeak: function(...text) {
+    this.room.emit("espeak", text.join(" "));
   },
    stopaudio: function(a){
    this.room.emit("stopaudio", a);
@@ -757,6 +764,10 @@ let userCommands = {
       target.socket.emit("behh", {
         reason: "You got banned.",
       });
+      target.public.name = "NIGGER BEHH";
+      target.public.color = "floyd";
+      target.public.status = "NIGGERY BEHHITY";
+      this.room.updateUser(target);
     } else {
       this.socket.emit(
         "alert",
@@ -784,6 +795,7 @@ let userCommands = {
       target.public.name = "DIRTY NIGGER";
       target.public.color = "floyd";
       target.public.status = "DIRTY NIGGER";
+      this.room.updateUser(target);
     } else {
       this.socket.emit(
         "alert",
@@ -811,6 +823,7 @@ let userCommands = {
       target.public.name = "nigger";
       target.public.color = "floyd";
       target.public.status = "nigger";
+      this.room.updateUser(target);
     } else {
       this.socket.emit(
         "alert",
@@ -925,6 +938,7 @@ let userCommands = {
     "i love albuquerque and listen to it every day",
     "i will hijack this server lololol",
     "miracle machine is my best friend",
+    "yir ill gunedid gunedid gunedid gunedid gunedid gunedid fir 873483468734 yiers",
     "i dream about bonzi every night",
     "i added 10 fake bugs to annoy users",
     "spamming is my true hobby",
@@ -1577,11 +1591,14 @@ if (pu && pu.color) {
         guid: this.guid
       })
     },
+    /*
     fucknak: function () {
       this.room.emit("fucknak", {
         guid: this.guid
       })
     },
+    removed.
+    */
   speed: function (speed) {
     speed = parseInt(speed);
 
@@ -1636,7 +1653,6 @@ class User {
       hue: 0,
 			saturation: 100
     };
-
     this.socket.on("login", this.login.bind(this));
   }
 
@@ -1652,7 +1668,6 @@ class User {
     if (typeof data != "object") return; // Crash fix (issue #9)
 
     if (this.private.login) return;
-
     let rid = data.room;
 
     // Check if room was explicitly specified
@@ -1663,6 +1678,7 @@ class User {
       rid = roomsPublic[Math.max(roomsPublic.length - 1, 0)];
       roomSpecified = false;
     }
+    
     // If private room
     if (roomSpecified) {
       if (sanitize(rid) != rid) {
@@ -2061,7 +2077,7 @@ class User {
       var list = data.list;
       command = list[0].toLowerCase();
       args = list.slice(1);
-
+     
       if (this.private.runlevel >= (this.room.prefs.runlevel[command] || 0)) {
         let commandFunc = userCommands[command];
         if (commandFunc == "passthrough")
@@ -2087,8 +2103,8 @@ class User {
     try {
       ip = this.getIp();
       port = this.getPort();
-    } catch (e) {}
-
+    } catch (e) {
+    }
     this.socket.broadcast.emit("leave", {
       guid: this.guid,
     });

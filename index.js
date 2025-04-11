@@ -45,6 +45,11 @@ var port = process.env.PORT || settings.port;
 
 exports.io = io;
 
+// Init winston loggers (hi there)
+const Log = require("./log.js");
+Log.init();
+const log = Log.log;
+
 // Init sanitize-html
 var sanitize = require("sanitize-html");
 
@@ -55,9 +60,7 @@ Ban.init();
 // Start actually listening
 server.listen(port, function () {
   console.log(
-    " Welcome to BonziWORLD Anony Edition Remastered!\n",
-    "---------<[{ Ports }]>---------\n",
-    "This server is listening at the port " + port + ". Have fun!"
+    " Welcome to BonziWORLD Anony Edition Remastered!!\n", "HTTP Express Server listening on port " + port + "\n",
   );
 });
 app.use(express.static(__dirname + "/public"));
