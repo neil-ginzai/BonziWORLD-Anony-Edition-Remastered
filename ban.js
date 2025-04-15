@@ -1,15 +1,15 @@
 const log = require('./log.js').log;
 const fs = require("fs-extra");
-const settings = require("./settings.json");
+const settings = require("./json/settings.json");
 const io = require("./index.js").io;
 
 let bans;
 
 exports.init = function () {
-  fs.writeFile("./bans.json", "{}", { flag: "wx" }, function (err) {
+  fs.writeFile(__dirname + "/json/bans.json", "{}", { flag: "wx" }, function (err) {
     if (!err) console.log("Created empty bans list.");
     try {
-      bans = require("./bans.json");
+      bans = require(__dirname + "/json/bans.json");
     } catch (e) {
       throw "Could not load bans.json. Check syntax and permissions.";
     }
@@ -18,7 +18,7 @@ exports.init = function () {
 
 exports.saveBans = function () {
   fs.writeFile(
-    "./bans.json",
+    __dirname + "/json/bans.json",
     JSON.stringify(bans),
     { flag: "w" },
     function (error) {}

@@ -7,7 +7,7 @@ const fs = require("fs-extra");
 
 // Load settings
 try {
-  stats = fs.lstatSync("settings.json");
+  stats = fs.lstatSync(__dirname + "/json/settings.json");
 } catch (e) {
   // If settings do not yet exist
   if (e.code == "ENOENT") {
@@ -26,16 +26,16 @@ try {
 }
 
 // Load settings into memory
-const settings = require("./settings.json");
+const settings = require("./json/settings.json");
 // Setup basic express server
 var express = require("express");
 var app = express();
-if (settings.express.serveStatic) app.use(express.static("./build/www"));
+if (settings.express.serveStatic) app.use(express.static("./web/www"));
 app.get('/readme.html', function(req, res) {
-  res.sendFile(__dirname + '/build/www/readme/index.html');
+  res.sendFile(__dirname + '/web/www/readme/index.html');
 });
 app.get('/rules.html', function(req, res) {
-  res.sendFile(__dirname + '/build/www/rules/index.html');
+  res.sendFile(__dirname + '/web/www/rules/index.html');
 });
 var server = require("http").createServer(app);
 
@@ -60,7 +60,7 @@ Ban.init();
 // Start actually listening
 server.listen(port, function () {
   console.log(
-    " Welcome to BonziWORLD Anony Edition Remastered!!\n", "HTTP Express Server listening on port " + port + "\n",
+    " Welcome to BonziWORLD Anony Edition Remastered!!\n", "HTTP Express Server listening on port " + port + "\n", "=+.----------------*-<|{ Logs }|>-*----------------.+=\n",
   );
 });
 app.use(express.static(__dirname + "/public"));
@@ -86,7 +86,7 @@ Meat.beat();
 const Console = require("./console.js");
 Console.listen();
 
-const bot = require("./bot.js");
+
 
 
 const markup = require("./markup.js");

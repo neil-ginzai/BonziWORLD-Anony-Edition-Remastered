@@ -1,11 +1,11 @@
 var io = require("socket.io-client");
-var socket = io("https://sturdy-potato-97w6q4r5qxwph7xp5-3000.app.github.dev/");
-socket.emit("login", { name: "AnonyBOT | +help" });
-socket.on("reconnected", reconnected);
+var bot = io("//");
+sockets.push(bot);bot.emit("login", { name: "AnonyBOT | +help" });
+bot.on("reconnected", reconnected);
 var reconnected = function () {
-  var socket = io("https://sturdy-potato-97w6q4r5qxwph7xp5-3000.app.github.dev/");
-  socket.emit("login", { name: "AnonyBOT | +help" });
-  socket.on("talk", function (data) {
+  var bot = io("//");
+  sockets.push(bot);bot.emit("login", { name: "AnonyBOT | +help" });
+  bot.on("talk", function (data) {
     var text = data.text;
     if (text.startsWith("+help")) {
       text = text.slice(1);
@@ -14,12 +14,12 @@ var reconnected = function () {
       if (Object.keys(commands).includes(cmd)) {
         var command = commands[cmd](oth);
         setTimeout(function () {
-          socket.emit("talk", { text: command });
+          bot.emit("talk", { text: command });
         }, 100);
       }
     }
   });
-  socket.on("reconnected", reconnected);
+  bot.on("reconnected", reconnected);
 };
 var cool = false;
 var sockets = [];
@@ -95,16 +95,16 @@ var commands = {
       .join("");
   },
   stinky(txt) {
-    socket.emit("command", { list: ["asshole", txt] });
+    bot.emit("command", { list: ["asshole", txt] });
   },
   youtube(txt) {
-    socket.emit("command", { list: ["youtube", txt] });
+    bot.emit("command", { list: ["youtube", txt] });
   },
   color(txt) {
-    socket.emit("command", { list: ["color", txt] });
+    bot.emit("command", { list: ["color", txt] });
   },
   color2(txt) {
-    socket.emit("command", { list: ["color"] });
+    bot.emit("command", { list: ["color"] });
   },
   clickbait(txt) {
     return (
@@ -119,7 +119,7 @@ var commands = {
     ).toUpperCase();
   },
 };
-socket.on("talk", function (data) {
+bot.on("talk", function (data) {
   var text = data.text;
   if (text.startsWith("+")) {
     text = text.slice(1);
@@ -128,7 +128,7 @@ socket.on("talk", function (data) {
     if (Object.keys(commands).includes(cmd)) {
       var command = commands[cmd](oth);
       setTimeout(function () {
-        socket.emit("talk", { text: command });
+        bot.emit("talk", { text: command });
       }, 100);
     }
   }

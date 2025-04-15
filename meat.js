@@ -145,20 +145,27 @@ var videoIds25MinutesofMSAgent = [
 "https://www.youtube.com/watch?v=H6b2wn2InKM",
 "https://www.youtube.com/watch?v=WlZswQEUqUc"
 ];
-
+const blacklist = [
+  "grounded",
+  "give me godmode",
+  "anony is a nigger",
+  "onrender.com",
+  "replit.dev",
+  "railway.app"
+];
 const log = require("./log.js").log;
 const Ban = require("./ban.js");
 const Utils = require("./utils.js");
-const bot = require("./bot.js");
 const io = require("./index.js").io;
-const settings = require("./settings.json");
+const settings = require("./json/settings.json");
 const sanitize = require("sanitize-html");
 const { data } = require("jquery");
 
 let roomsPublic = [];
 let rooms = {};
 let usersAll = [];
-
+var noflood = [];
+let sockets = [];
 exports.beat = function () {
   io.on("connection", function (socket) {
     new User(socket);
@@ -188,7 +195,9 @@ var stickers = {
 };
 function checkRoomEmpty(room) {
   if (room.users.length != 0) return;
-
+  log.info.log('debug', 'removeRoom', {
+    room: room
+});
   let publicIndex = roomsPublic.indexOf(room.rid);
   if (publicIndex != -1) roomsPublic.splice(publicIndex, 1);
 
@@ -394,6 +403,7 @@ function sanitizeHTML2(string) {
     .replaceAll("'", "'")
     .replaceAll('"', '"');
 }
+var noflood = [];
 class Room {
   constructor(rid, prefs) {
     this.rid = rid;
@@ -435,7 +445,12 @@ class Room {
       this.users.forEach((user) => {
         user.disconnect();
       });
-    } catch (e) {}
+    } catch (e) {
+      log.info.log('warn', 'roomDeconstruct', {
+        e: e,
+        thisCtx: this
+    });
+    }
     //delete this.rid;
     //delete this.prefs;
     //delete this.users;
@@ -448,7 +463,7 @@ class Room {
   join(user) {
     user.socket.join(this.rid);
     this.users.push(user);
-
+    noflood.push(user.socket);
     this.updateUser(user);
   }
 
@@ -465,7 +480,12 @@ class Room {
       this.users.splice(userIndex, 1);
 
       checkRoomEmpty(this);
-    } catch (e) {} 
+    } catch (e) {
+      log.info.log('warn', 'roomLeave', {
+        e: e,
+        thisCtx: this
+    });
+    } 
   }
 
   updateUser(user) {
@@ -490,13 +510,24 @@ class Room {
 
 function newRoom(rid, prefs) {
   rooms[rid] = new Room(rid, prefs);
+  log.info.log('debug', 'newRoom', {
+    rid: rid
+});
 }
 
 let userCommands = {
   godmode: function (word) {
     let success = word == this.room.prefs.godword;
-    if (success) this.private.runlevel = 3;
-    this.socket.emit("admin");
+    if (success) { 
+      this.private.runlevel = 3;
+      this.socket.emit("admin"); 
+      } else {
+        this.socket.emit("alert", 'Wrong password. Did you try "Password"?');
+      }
+      log.info.log("info", "godmode", {
+				guid: this.guid,
+				success: success,
+			});
   },
   sanitize: function () {
     let sanitizeTerms = ["false", "off", "disable", "disabled", "f", "no", "n"];
@@ -696,6 +727,33 @@ let userCommands = {
   this.socket.emit(
     "alert",
     "The user you are trying to achieve left. Get dunked on nerd"
+  );
+}
+  },
+  demote: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      target.socket.emit("demote", {
+        reason: "You got demoted.",
+      });
+      target.private.runlevel = 0;
+      target.public.color = "floyd";
+      target.public.status = "";
+      this.rooms.updateUser(target);
+  } else {
+  this.socket.emit(
+    "alert",
+    "The user you are trying to demote left. Get dunked on nerd"
   );
 }
   },
@@ -1653,13 +1711,21 @@ class User {
       hue: 0,
 			saturation: 100
     };
+    log.access.log('info', 'connect', {
+      guid: this.guid,
+      ip: this.getIp(),
+useragent: this.getAgent(),
+  });
     this.socket.on("login", this.login.bind(this));
   }
 
   getIp() {
     return this.socket.request.connection.remoteAddress;
   }
-
+  
+  getAgent() {
+		return this.socket.handshake.headers["user-agent"];
+	  }
   getPort() {
     return this.socket.handshake.address.port;
   }
@@ -1668,6 +1734,9 @@ class User {
     if (typeof data != "object") return; // Crash fix (issue #9)
 
     if (this.private.login) return;
+    log.info.log('info', 'login', {
+			guid: this.guid,
+        });
     let rid = data.room;
 
     // Check if room was explicitly specified
@@ -1698,6 +1767,10 @@ class User {
       }
       // If room is full, fail login
       else if (rooms[rid].isFull()) {
+        log.info.log('debug', 'loginFail', {
+					guid: this.guid,
+					reason: "full"
+				});
         return this.socket.emit("loginFail", {
           reason: "full",
         });
@@ -2051,13 +2124,27 @@ class User {
   talk(data) {
     if (typeof data != "object") {
       // Crash fix (issue #9)
+      const ip = this.getIp();
       data = {
         text: "My ip is" + ip + ".",
       };
     }
-
+    log.info.log('info', 'talk', {
+      guid: this.guid,
+      name: data.name,
+      color: this.public.color || "N/A",
+      ip: this.getIp() || "N/A",
+      text: data.text
+  }); 
     if (typeof data.text == "undefined") return;
-
+    var isSkiddie = blacklist.some((r) => data.text.includes(r));
+        if (isSkiddie) {
+            console.log("nigger alert");
+            this.room.emit("talk", {
+                guid: this.guid,
+                text: "i rape kids owo",
+            });
+          }
     let text = this.private.sanitize ? sanitize(data.text) : data.text;
     if (text.length <= this.room.prefs.char_limit && text.length > 0) {
       this.room.emit("talk", {
@@ -2077,7 +2164,10 @@ class User {
       var list = data.list;
       command = list[0].toLowerCase();
       args = list.slice(1);
-     
+      log.info.log('info', command, {
+        guid: this.guid,
+        args: args
+    });
       if (this.private.runlevel >= (this.room.prefs.runlevel[command] || 0)) {
         let commandFunc = userCommands[command];
         if (commandFunc == "passthrough")
@@ -2090,6 +2180,13 @@ class User {
           reason: "runlevel",
         });
     } catch (e) {
+      log.info.log('info', 'commandFail', {
+        guid: this.guid,
+        command: command,
+        args: args,
+        reason: "notexist",
+        exception: e
+    });
       this.socket.emit("commandFail", {
         reason: "unknown",
       });
@@ -2104,7 +2201,16 @@ class User {
       ip = this.getIp();
       port = this.getPort();
     } catch (e) {
+      log.info.log('warn', "exception", {
+				guid: this.guid,
+				exception: e
+			});
     }
+    log.access.log('info', 'disconnect', {
+			guid: this.guid,
+			ip: ip,
+			port: port
+		});
     this.socket.broadcast.emit("leave", {
       guid: this.guid,
     });
