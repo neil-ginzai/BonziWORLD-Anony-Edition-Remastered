@@ -60,8 +60,8 @@ var videoIdsCommercials = [
   "https://www.youtube.com/watch?v=5ls7g9eH7ss",
   "https://www.youtube.com/watch?v=K0damuN_9bQ",
   "https://www.youtube.com/watch?v=ZYNjnQSw9OI",
-  "https://www.youtube.com/watch?v=7FtQUqmwKsQ"
-]
+  "https://www.youtube.com/watch?v=7FtQUqmwKsQ",
+];
 var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
   "https://www.youtube.com/watch?v=6ZykGz5kF0U",
@@ -74,26 +74,27 @@ var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM",
-"https://www.youtube.com/watch?v=GI94aaSjt4M",
-"https://www.youtube.com/watch?v=WlZswQEUqUc"
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=qsATpni7B9s",
+  "https://www.youtube.com/watch?v=a0tSVDjQbz0",
+  "https://www.youtube.com/watch?v=4ES2y7bxENE",
+  "https://www.youtube.com/watch?v=yp7VrlFbbNc",
+  "https://www.youtube.com/watch?v=A95ESwEBl4Q",
+  "https://www.youtube.com/watch?v=vXZw29lK1Uk",
+  "https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+  "https://www.youtube.com/watch?v=DD2xYpxXndw",
+  "https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+  "https://www.youtube.com/watch?v=c_F9mHfsyMI",
+  "https://www.youtube.com/watch?v=2vRrNYarBiU",
+  "https://www.youtube.com/watch?v=6pATxytAt40",
+  "https://www.youtube.com/watch?v=Bbn13Qegghs",
+  "https://www.youtube.com/watch?v=QFkksPZmtMU",
+  "https://www.youtube.com/watch?v=y9mkFzDjmv0",
+  "https://www.youtube.com/watch?v=5H1TaN1gO1E",
+  "https://www.youtube.com/watch?v=x1yiXmkNfdc",
+  "https://www.youtube.com/watch?v=H6b2wn2InKM",
+  "https://www.youtube.com/watch?v=GI94aaSjt4M",
+  "https://www.youtube.com/watch?v=WlZswQEUqUc",
 ];
 var videoIds5PM = [
   "https://www.youtube.com/watch?v=MmJ8NVLji84",
@@ -103,13 +104,13 @@ var videoIds5PM = [
   "https://www.youtube.com/watch?v=NhpQQAyfXrw",
   "https://www.youtube.com/watch?v=mah1ovX0H9w",
   "https://www.youtube.com/watch?v=GI94aaSjt4M",
-  "https://www.youtube.com/watch?v=WlZswQEUqUc"
+  "https://www.youtube.com/watch?v=WlZswQEUqUc",
 ];
 var videoIds6PM = [
- "https://www.youtube.com/watch?v=GI94aaSjt4M",
- "https://www.youtube.com/watch?v=St1DjbYbA88",
- "https://www.youtube.com/watch?v=f5thUntstCY",
- "https://www.youtube.com/watch?v=WlZswQEUqUc"
+  "https://www.youtube.com/watch?v=GI94aaSjt4M",
+  "https://www.youtube.com/watch?v=St1DjbYbA88",
+  "https://www.youtube.com/watch?v=f5thUntstCY",
+  "https://www.youtube.com/watch?v=WlZswQEUqUc",
 ];
 var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=tSOvBex4SJU", // Annoying Orange
@@ -117,33 +118,41 @@ var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=445gC5CYQfw",
   "https://www.youtube.com/watch?v=yYsOnfN5tIU",
   "https://www.youtube.com/watch?v=f5thUntstCY",
- /* "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version otalpik fucking removed that video*/
+  /* "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version otalpik fucking removed that video*/
   "https://www.youtube.com/watch?v=I61oSL5xBkk",
   "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
   "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
   "https://www.youtube.com/watch?v=h0m34g9rVys", // FestivalV S1
   "https://www.youtube.com/watch?v=bSKJg5jsgdc",
   "https://www.youtube.com/watch?v=UkcKserLvnc",
+  "https://www.youtube.com/watch?v=XAuQSLoI07U",
+  "https://www.youtube.com/watch?v=_u5dtBtG9yU",
+  "https://www.youtube.com/watch?v=EEzJH90h3aA",
+  "https://www.youtube.com/watch?v=WEz0IoffV9g",
+  "https://www.youtube.com/watch?v=nH325JnIMZs",
+  "https://www.youtube.com/watch?v=OyVAp0tOk5A",
+  "https://www.youtube.com/watch?v=RFi2vcseEz8",
   "https://www.youtube.com/watch?v=x4pg9NH3XVk",
-  "https://www.youtube.com/watch?v=tk2MvV8LeZs", "https://www.youtube.com/watch?v=qsATpni7B9s",
-"https://www.youtube.com/watch?v=a0tSVDjQbz0",
-"https://www.youtube.com/watch?v=4ES2y7bxENE",
-"https://www.youtube.com/watch?v=yp7VrlFbbNc",
-"https://www.youtube.com/watch?v=A95ESwEBl4Q",
-"https://www.youtube.com/watch?v=vXZw29lK1Uk",
-"https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
-"https://www.youtube.com/watch?v=DD2xYpxXndw",
-"https://www.youtube.com/watch?v=n4ZdBIN5MF8",
-"https://www.youtube.com/watch?v=c_F9mHfsyMI",
-"https://www.youtube.com/watch?v=2vRrNYarBiU",
-"https://www.youtube.com/watch?v=6pATxytAt40",
-"https://www.youtube.com/watch?v=Bbn13Qegghs",
-"https://www.youtube.com/watch?v=QFkksPZmtMU",
-"https://www.youtube.com/watch?v=y9mkFzDjmv0",
-"https://www.youtube.com/watch?v=5H1TaN1gO1E",
-"https://www.youtube.com/watch?v=x1yiXmkNfdc",
-"https://www.youtube.com/watch?v=H6b2wn2InKM",
-"https://www.youtube.com/watch?v=WlZswQEUqUc"
+  "https://www.youtube.com/watch?v=tk2MvV8LeZs",
+  "https://www.youtube.com/watch?v=qsATpni7B9s",
+  "https://www.youtube.com/watch?v=a0tSVDjQbz0",
+  "https://www.youtube.com/watch?v=4ES2y7bxENE",
+  "https://www.youtube.com/watch?v=yp7VrlFbbNc",
+  "https://www.youtube.com/watch?v=A95ESwEBl4Q",
+  "https://www.youtube.com/watch?v=vXZw29lK1Uk",
+  "https://www.youtube.com/watch?v=W_Q5ACNMlsQ",
+  "https://www.youtube.com/watch?v=DD2xYpxXndw",
+  "https://www.youtube.com/watch?v=n4ZdBIN5MF8",
+  "https://www.youtube.com/watch?v=c_F9mHfsyMI",
+  "https://www.youtube.com/watch?v=2vRrNYarBiU",
+  "https://www.youtube.com/watch?v=6pATxytAt40",
+  "https://www.youtube.com/watch?v=Bbn13Qegghs",
+  "https://www.youtube.com/watch?v=QFkksPZmtMU",
+  "https://www.youtube.com/watch?v=y9mkFzDjmv0",
+  "https://www.youtube.com/watch?v=5H1TaN1gO1E",
+  "https://www.youtube.com/watch?v=x1yiXmkNfdc",
+  "https://www.youtube.com/watch?v=H6b2wn2InKM",
+  "https://www.youtube.com/watch?v=WlZswQEUqUc",
 ];
 const blacklist = [
   "grounded",
@@ -151,7 +160,7 @@ const blacklist = [
   "anony is a nigger",
   "onrender.com",
   "replit.dev",
-  "railway.app"
+  "railway.app",
 ];
 const log = require("./log.js").log;
 const Ban = require("./ban.js");
@@ -195,9 +204,9 @@ var stickers = {
 };
 function checkRoomEmpty(room) {
   if (room.users.length != 0) return;
-  log.info.log('debug', 'removeRoom', {
-    room: room
-});
+  log.info.log("debug", "removeRoom", {
+    room: room,
+  });
   let publicIndex = roomsPublic.indexOf(room.rid);
   if (publicIndex != -1) roomsPublic.splice(publicIndex, 1);
 
@@ -411,33 +420,45 @@ class Room {
     this.users = [];
 
     const date = new Date();
-		const hours = date.getHours();
-		const minutes = date.getMinutes();
-		if (hours == 16 && minutes <= 30) {
-		  var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-		  var vid = videoIds4PM2430PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
-		  this.vid = vid;
-		} else if (hours == 17) {
-		  var num = Math.floor(Math.random() * videoIds5PM.length);
-		  var vid = videoIds5PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
-		  this.vid = vid;
-		} else if (hours == 14) {
-		  var num = Math.floor(Math.random() * videoIds5PM.length);
-		  var vid = videoIds5PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
-		  this.vid = vid;
-		} else if (hours == 18 && minutes <= 30) {
-		  var num = Math.floor(Math.random() * videoIds6PM.length);
-		  var vid = videoIds6PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
-		  this.vid = vid;
-		} else if (hours == 19) {
-		  var num = Math.floor(Math.random() * videoIds6PM.length);
-		  var vid = videoIds6PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
-		  this.vid = vid;
-		} else {
-		  var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
-		  var vid = videoIds25MinutesofMSAgent[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
-		  this.vid = vid;
-		}
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    if (hours == 16 && minutes <= 30) {
+      var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
+      var vid = videoIds4PM2430PM[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
+      this.vid = vid;
+    } else if (hours == 17) {
+      var num = Math.floor(Math.random() * videoIds5PM.length);
+      var vid = videoIds5PM[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
+      this.vid = vid;
+    } else if (hours == 14) {
+      var num = Math.floor(Math.random() * videoIds5PM.length);
+      var vid = videoIds5PM[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
+      this.vid = vid;
+    } else if (hours == 18 && minutes <= 30) {
+      var num = Math.floor(Math.random() * videoIds6PM.length);
+      var vid = videoIds6PM[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
+      this.vid = vid;
+    } else if (hours == 19) {
+      var num = Math.floor(Math.random() * videoIds6PM.length);
+      var vid = videoIds6PM[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
+      this.vid = vid;
+    } else {
+      var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
+      var vid = videoIds25MinutesofMSAgent[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
+      this.vid = vid;
+    }
   }
 
   deconstruct() {
@@ -446,10 +467,10 @@ class Room {
         user.disconnect();
       });
     } catch (e) {
-      log.info.log('warn', 'roomDeconstruct', {
+      log.info.log("warn", "roomDeconstruct", {
         e: e,
-        thisCtx: this
-    });
+        thisCtx: this,
+      });
     }
     //delete this.rid;
     //delete this.prefs;
@@ -481,11 +502,11 @@ class Room {
 
       checkRoomEmpty(this);
     } catch (e) {
-      log.info.log('warn', 'roomLeave', {
+      log.info.log("warn", "roomLeave", {
         e: e,
-        thisCtx: this
-    });
-    } 
+        thisCtx: this,
+      });
+    }
   }
 
   updateUser(user) {
@@ -497,7 +518,7 @@ class Room {
 
   getUsersPublic() {
     let usersPublic = {};
-    this.users.forEach((user) =>{
+    this.users.forEach((user) => {
       usersPublic[user.guid] = user.public;
     });
     return usersPublic;
@@ -510,24 +531,24 @@ class Room {
 
 function newRoom(rid, prefs) {
   rooms[rid] = new Room(rid, prefs);
-  log.info.log('debug', 'newRoom', {
-    rid: rid
-});
+  log.info.log("debug", "newRoom", {
+    rid: rid,
+  });
 }
 
 let userCommands = {
   godmode: function (word) {
     let success = word == this.room.prefs.godword;
-    if (success) { 
+    if (success) {
       this.private.runlevel = 3;
-      this.socket.emit("admin"); 
-      } else {
-        this.socket.emit("alert", 'Wrong password. Did you try "Password"?');
-      }
-      log.info.log("info", "godmode", {
-				guid: this.guid,
-				success: success,
-			});
+      this.socket.emit("admin");
+    } else {
+      this.socket.emit("alert", 'Wrong password. Did you try "Password"?');
+    }
+    log.info.log("info", "godmode", {
+      guid: this.guid,
+      success: success,
+    });
   },
   sanitize: function () {
     let sanitizeTerms = ["false", "off", "disable", "disabled", "f", "no", "n"];
@@ -622,6 +643,13 @@ let userCommands = {
       vid: vid,
     });
   },
+  video_flash: function (vidRaw) {
+    var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+    this.room.emit("vvideo_flash", {
+      guid: this.guid,
+      vid: vid,
+    });
+  },
   kick: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");
@@ -706,6 +734,31 @@ let userCommands = {
       );
     }
   },
+  bless: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      target.public.color = "blessed";
+      target.public.status = "Blessed";
+      target.public.runlevel = 1;
+      this.room.updateUser(target);
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to bless left. Get dunked on nerd"
+      );
+    }
+  },
   achive: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");
@@ -723,12 +776,12 @@ let userCommands = {
         reason: "You got awarded as a admin.",
       });
       target.private.runlevel = 3;
-  } else {
-  this.socket.emit(
-    "alert",
-    "The user you are trying to achieve left. Get dunked on nerd"
-  );
-}
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to achieve left. Get dunked on nerd"
+      );
+    }
   },
   demote: function (data) {
     if (this.private.runlevel < 3) {
@@ -749,13 +802,13 @@ let userCommands = {
       target.private.runlevel = 0;
       target.public.color = "floyd";
       target.public.status = "";
-      this.rooms.updateUser(target);
-  } else {
-  this.socket.emit(
-    "alert",
-    "The user you are trying to demote left. Get dunked on nerd"
-  );
-}
+      this.room.updateUser(target);
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to demote left. Get dunked on nerd"
+      );
+    }
   },
   rape: function (data) {
     if (this.private.runlevel < 3) {
@@ -785,27 +838,42 @@ let userCommands = {
       );
     }
   },
-  announce: function(...text) {
-    if (this.private.runlevel < 1 && this.public.color != "blessed") return;
-    this.room.emit("announcement", {from:this.public.name,msg:text.join(" ")});
+  announce: function (...text) {
+    if (this.private.runlevel < 1 && this.public.color != "blessed") {
+      this.socket.emit(
+        "alert",
+        "This command is only for admins or blessed users."
+      );
+      return;
+    }
+    this.room.emit("announcement", {
+      from: this.public.name,
+      msg: text.join(" "),
+    });
   },
 
-  poll: function(...text) {
-    if (this.private.runlevel < 1 && this.public.color != "blessed") return;
+  poll: function (...text) {
+    if (this.private.runlevel < 1 && this.public.color != "blessed") {
+      this.socket.emit(
+        "alert",
+        "This command is only for admins or blessed users."
+      );
+      return;
+    }
     this.room.emit("pollshow", text.join(" "));
     this.room.pollvotes = {};
-    this.room.emit("pollupdate", {yes: 0, no: 0, votecount: 0});
+    this.room.emit("pollupdate", { yes: 0, no: 0, votecount: 0 });
   },
-  playaudio: function(a){
-   this.room.emit("playaudio", a);
+  playaudio: function (a) {
+    this.room.emit("playaudio", a);
   },
-  espeak: function(...text) {
+  espeak: function (...text) {
     this.room.emit("espeak", text.join(" "));
   },
-   stopaudio: function(a){
-   this.room.emit("stopaudio", a);
+  stopaudio: function (a) {
+    this.room.emit("stopaudio", a);
   },
- behh: function (data) {
+  behh: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");
       return;
@@ -891,44 +959,54 @@ let userCommands = {
   },
   sticker: function (sticker) {
     if (Object.keys(stickers).includes(sticker)) {
-        this.room.emit("talk", {
-            text: sanitizeHTML(`<img class=no_selection src=img/icons/stickers/${sticker}.png draggable=false width=170>`),
-            say: stickers[sticker],
-            guid: this.guid,
-        });
+      this.room.emit("talk", {
+        text: sanitizeHTML(
+          `<img class=no_selection src=img/icons/stickers/${sticker}.png draggable=false width=170>`
+        ),
+        say: stickers[sticker],
+        guid: this.guid,
+      });
     } else {
-        this.socket.emit('alert',{title:'Error 404',msg:'That sticker doesn\'t exist.',button:"Ok"});
+      this.socket.emit("alert", {
+        title: "Error 404",
+        msg: "That sticker doesn't exist.",
+        button: "Ok",
+      });
     }
   },
   nofuckoff: function (data) {
     if (this.private.runlevel < 3) {
-        this.socket.emit("alert", "admin=true");
-        return;
+      this.socket.emit("alert", "admin=true");
+      return;
     }
 
     this.room.emit("nofuckoff", {
-        guid: data,
+      guid: data,
     });
     var user = this;
     setTimeout(function () {
-        let pu = user.room.getUsersPublic()[data];
-        if (pu && pu.color) {
-            let target;
-            user.room.users.map((n) => {
-                if (n.guid == data) {
-                    target = n;
-                }
-            });
-            setTimeout(function () {
-                target.disconnect();
-                target.socket.emit("kick", {
-                    reason: "No fuck off<br><br><video style='border-radius: 3px;' src=\"https://cdn.discordapp.com/attachments/954050025170825237/1025126830845472798/DankVideo15.mp4\" autoplay loop width=380>",
-        //reason: "No fuck off<br><audio style='display: none;' src=\"/sfx/no_fuck_off.mp3\" autoplay loop width=380>",
-                });
-            }, 380);
-        } else {
-            user.socket.emit("alert", "The user you are trying to dissolve left. Get dunked on nerd");
-        }
+      let pu = user.room.getUsersPublic()[data];
+      if (pu && pu.color) {
+        let target;
+        user.room.users.map((n) => {
+          if (n.guid == data) {
+            target = n;
+          }
+        });
+        setTimeout(function () {
+          target.disconnect();
+          target.socket.emit("kick", {
+            reason:
+              "No fuck off<br><br><video style='border-radius: 3px;' src=\"https://cdn.discordapp.com/attachments/954050025170825237/1025126830845472798/DankVideo15.mp4\" autoplay loop width=380>",
+            //reason: "No fuck off<br><audio style='display: none;' src=\"/sfx/no_fuck_off.mp3\" autoplay loop width=380>",
+          });
+        }, 380);
+      } else {
+        user.socket.emit(
+          "alert",
+          "The user you are trying to dissolve left. Get dunked on nerd"
+        );
+      }
     }, 1084);
   },
   crosscolor: function (color) {
@@ -969,19 +1047,22 @@ let userCommands = {
 
     //this.socket.emit("alert", "Access to this command has been disabled.");
   },
-  "amplitude": function (amplitude) {
+  amplitude: function (amplitude) {
     amplitude = parseInt(amplitude);
 
     if (isNaN(amplitude)) return;
 
     if (this.private.runlevel != 3) {
-        this.public.amplitude = Math.max(Math.min(parseInt(amplitude), this.room.prefs.amplitude.max), this.room.prefs.amplitude.min);
+      this.public.amplitude = Math.max(
+        Math.min(parseInt(amplitude), this.room.prefs.amplitude.max),
+        this.room.prefs.amplitude.min
+      );
     } else {
-        this.public.amplitude = amplitude;
+      this.public.amplitude = amplitude;
     }
 
     this.room.updateUser(this);
-},
+  },
   wtf: function () {
     var wtf = [
       "ok yall grounded grounded grounded for 999927398999 years",
@@ -993,27 +1074,27 @@ let userCommands = {
       "Everyone Windows XP Pussy Edition font?",
       "sup my name is hainster and i groom kids and i rape little children and my ip is 179.6.6.23 so you can come here and fuck me",
       "i ban kiddies for no reason just to add racist stuff to this site",
-    "i love albuquerque and listen to it every day",
-    "i will hijack this server lololol",
-    "miracle machine is my best friend",
-    "yir ill gunedid gunedid gunedid gunedid gunedid gunedid fir 873483468734 yiers",
-    "i dream about bonzi every night",
-    "i added 10 fake bugs to annoy users",
-    "spamming is my true hobby",
-    "breaking the site rules is my daily mission",
-    "i rewrite logs to blame innocent people",
-    "nobody can out-troll me on this platform"
-    ]
+      "i love albuquerque and listen to it every day",
+      "i will hijack this server lololol",
+      "miracle machine is my best friend",
+      "yir ill gunedid gunedid gunedid gunedid gunedid gunedid fir 873483468734 yiers",
+      "i dream about bonzi every night",
+      "i added 10 fake bugs to annoy users",
+      "spamming is my true hobby",
+      "breaking the site rules is my daily mission",
+      "i rewrite logs to blame innocent people",
+      "nobody can out-troll me on this platform",
+    ];
     var num = Math.floor(Math.random() * wtf.length);
     this.room.emit("talk", {
-        text: wtf[num],
-        guid: this.guid,
+      text: wtf[num],
+      guid: this.guid,
     });
     this.room.emit("wtf", {
-        text: wtf[num],
-        guid: this.guid,
+      text: wtf[num],
+      guid: this.guid,
     });
-},
+  },
   unban: function (ip) {
     Ban.removeBan(ip);
   },
@@ -1040,48 +1121,51 @@ let userCommands = {
   stoptyping: function () {
     this.room.emit("stoptyping", { guid: this.guid });
   },
-  "dm":function(...text){
-    text = text.join(" ")
-    text = sanitize(text,settingsSantize)
-    if(!this.private.group){
-        this.socket.emit("alert","join a group first")
-        return
+  dm: function (...text) {
+    text = text.join(" ");
+    text = sanitize(text, settingsSantize);
+    if (!this.private.group) {
+      this.socket.emit("alert", "join a group first");
+      return;
     }
-    this.room.users.map(n=>{
-        if(this.private.group === n.private.group){
-            n.socket.emit("talk",{
-                guid:this.guid,
-                text:"<h5>(Only your group can see this!)</h5><br>"+text,
-                say: text
-            })
+    this.room.users.map((n) => {
+      if (this.private.group === n.private.group) {
+        n.socket.emit("talk", {
+          guid: this.guid,
+          text: "<h5>(Only your group can see this!)</h5><br>" + text,
+          say: text,
+        });
+      }
+    });
+  },
+  dm2: function (data) {
+    if (typeof data != "object") return;
+    let pu = this.room.getUsersPublic()[data.target];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data.target) {
+          target = n;
         }
-    })
-},
-"dm2": function (data) {
-if (typeof data != "object") return
-let pu = this.room.getUsersPublic()[data.target]
-if (pu && pu.color) {
-  let target;
-  this.room.users.map(n => {
-    if (n.guid == data.target) {
-      target = n;
+      });
+      data.text = sanitize(data.text, settingsSantize);
+      target.socket.emit("talk", {
+        guid: this.guid,
+        text: data.text + "<h5>(Only you can see this!)</h5>",
+        say: data.text,
+      });
+      this.socket.emit("talk", {
+        guid: this.guid,
+        text: data.text + "<h5>(Only " + pu.name + " can see this!)</h5>",
+        say: data.text,
+      });
+    } else {
+      this.socket.emit("alert", {
+        msg: "The user you are trying to dm left. Get dunked on nerd",
+        button: "oh fuck",
+      });
     }
-  })
-  data.text = sanitize(data.text, settingsSantize)
-  target.socket.emit("talk", {
-    guid: this.guid,
-    text: data.text+"<h5>(Only you can see this!)</h5>",
-    say: data.text
-  })
-  this.socket.emit("talk", {
-    guid: this.guid,
-    text: data.text + "<h5>(Only " + pu.name + " can see this!)</h5>",
-    say: data.text
-  })
-} else {
-  this.socket.emit('alert', { msg: 'The user you are trying to dm left. Get dunked on nerd', button: "oh fuck" })
-}
-},
+  },
   linux: "passthrough",
   pawn: "passthrough",
   bees: "passthrough",
@@ -1194,8 +1278,7 @@ if (pu && pu.color) {
     this.public.status = this.private.sanitize ? sanitize(status) : status;
     this.room.updateUser(this);
   },
-  "fixbonzitv": function() {
-        
+  fixbonzitv: function () {
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
@@ -1205,20 +1288,33 @@ if (pu && pu.color) {
     /*var tvhook = new Webhook("https://discord.com/api/webhooks/1022179106412036166/8cJeQN1dFC78Rar0pdjAEyYnsFFq--ZiWZt4WTT1--pnLikWRzwGjOHWYEYmtdmyjcRg");*/
 
     if (bonziTvCommercialMode) {
-
       var num = Math.floor(Math.random() * videoIdsCommercials.length);
-      var vid = videoIdsCommercials[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
+      var vid = videoIdsCommercials[num]
+        .replace("https://www.youtube.com/watch?v=", "")
+        .replace("https://www.youtube.com/", "");
       this.room.vid = vid;
 
       //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
       this.room.emit("replaceTVWithURL", {
-        id: videoIdsCommercials[Math.floor(Math.random() * videoIdsCommercials.length)].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
-        identId: videoIdsCommercials[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
+        id: videoIdsCommercials[
+          Math.floor(Math.random() * videoIdsCommercials.length)
+        ]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", ""),
+        identId: videoIdsCommercials[num]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", ""),
       });
     } else {
-      if ((hours == 16 && minutes <= 30) || (hours == 9 && minutes <= 25) || (hours == 13 && minutes <= 20)) {
+      if (
+        (hours == 16 && minutes <= 30) ||
+        (hours == 9 && minutes <= 25) ||
+        (hours == 13 && minutes <= 20)
+      ) {
         var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-        var vid = videoIds4PM2430PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
+        var vid = videoIds4PM2430PM[num]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         /*await ytdl.getInfo("https://www.youtube.com/watch?v=" + vid).then((info) => {
@@ -1253,12 +1349,19 @@ if (pu && pu.color) {
           }
         });*/
         this.room.emit("replaceTVWithURL", {
-          id: videoIds4PM2430PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
-          identId: bonziTvIdent[ident].replace("https://www.youtube.com/watch?v=", ""),
+          id: videoIds4PM2430PM[num]
+            .replace("https://www.youtube.com/watch?v=", "")
+            .replace("https://www.youtube.com/", ""),
+          identId: bonziTvIdent[ident].replace(
+            "https://www.youtube.com/watch?v=",
+            ""
+          ),
         });
       } else if (hours == 17) {
         var num = Math.floor(Math.random() * videoIds5PM.length);
-        var vid = videoIds5PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
+        var vid = videoIds5PM[num]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         /*await ytdl.getInfo("https://www.youtube.com/watch?v=" + vid).then((info) => {
           console.log("Playing video: " + info.videoDetails.title);
@@ -1293,12 +1396,19 @@ if (pu && pu.color) {
         });*/
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds5PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
-          identId: bonziTvIdent[ident].replace("https://www.youtube.com/watch?v=", ""),
+          id: videoIds5PM[num]
+            .replace("https://www.youtube.com/watch?v=", "")
+            .replace("https://www.youtube.com/", ""),
+          identId: bonziTvIdent[ident].replace(
+            "https://www.youtube.com/watch?v=",
+            ""
+          ),
         });
       } else if (hours == 18 && minutes <= 20) {
         var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid = videoIds6PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
+        var vid = videoIds6PM[num]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         /*await ytdl.getInfo("https://www.youtube.com/watch?v=" + vid).then((info) => {
           console.log("Playing video: " + info.videoDetails.title);
@@ -1333,12 +1443,19 @@ if (pu && pu.color) {
         });*/
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds6PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
-          identId: bonziTvIdent[ident].replace("https://www.youtube.com/watch?v=", ""),
+          id: videoIds6PM[num]
+            .replace("https://www.youtube.com/watch?v=", "")
+            .replace("https://www.youtube.com/", ""),
+          identId: bonziTvIdent[ident].replace(
+            "https://www.youtube.com/watch?v=",
+            ""
+          ),
         });
       } else if (hours == 19 && minutes <= 22) {
         var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid = videoIds6PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
+        var vid = videoIds6PM[num]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         /*await ytdl.getInfo("https://www.youtube.com/watch?v=" + vid).then((info) => {
           console.log("Playing video: " + info.videoDetails.title);
@@ -1373,12 +1490,19 @@ if (pu && pu.color) {
         });*/
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds6PM[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
-          identId: bonziTvIdent[ident].replace("https://www.youtube.com/watch?v=", ""),
+          id: videoIds6PM[num]
+            .replace("https://www.youtube.com/watch?v=", "")
+            .replace("https://www.youtube.com/", ""),
+          identId: bonziTvIdent[ident].replace(
+            "https://www.youtube.com/watch?v=",
+            ""
+          ),
         });
       } else {
         var num = Math.floor(Math.random() * videoIds25MinutesofMSAgent.length);
-        var vid = videoIds25MinutesofMSAgent[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", "");
+        var vid = videoIds25MinutesofMSAgent[num]
+          .replace("https://www.youtube.com/watch?v=", "")
+          .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
         /*await ytdl.getInfo("https://www.youtube.com/watch?v=" + vid).then((info) => {
           console.log("Playing video: " + info.videoDetails.title);
@@ -1413,8 +1537,13 @@ if (pu && pu.color) {
         });*/
         //tvhook.send("Now playing: https://www.youtube.com/watch?v=" + vid);
         this.room.emit("replaceTVWithURL", {
-          id: videoIds25MinutesofMSAgent[num].replace("https://www.youtube.com/watch?v=", "").replace("https://www.youtube.com/", ""),
-          identId: bonziTvIdent[ident].replace("https://www.youtube.com/watch?v=", ""),
+          id: videoIds25MinutesofMSAgent[num]
+            .replace("https://www.youtube.com/watch?v=", "")
+            .replace("https://www.youtube.com/", ""),
+          identId: bonziTvIdent[ident].replace(
+            "https://www.youtube.com/watch?v=",
+            ""
+          ),
         });
       }
     }
@@ -1431,7 +1560,7 @@ if (pu && pu.color) {
     if (Math.random() * 3 == 1) {
       if ((hours == 16 && minutes <= 30) || (hours == 9 && minutes <= 25)) {
         var num = Math.floor(Math.random() * videoIds4PM2430PM.length);
-        var vid  = videoIds4PM2430PM[num]
+        var vid = videoIds4PM2430PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
@@ -1458,7 +1587,7 @@ if (pu && pu.color) {
         });
       } else if (hours == 18 && minutes <= 30) {
         var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid  = videoIds6PM[num]
+        var vid = videoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
@@ -1471,7 +1600,7 @@ if (pu && pu.color) {
         });
       } else if (hours == 19 && minutes <= 22) {
         var num = Math.floor(Math.random() * videoIds6PM.length);
-        var vid  = videoIds6PM[num]
+        var vid = videoIds6PM[num]
           .replace("https://www.youtube.com/watch?v=", "")
           .replace("https://www.youtube.com/", "");
         this.room.vid = vid;
@@ -1602,7 +1731,12 @@ if (pu && pu.color) {
   setbonzitvvid3: function (vidRaw) {
     if (this.room.rid != "bonzi_tv") return;
 
-    var bonziTvIdent = ["https://www.youtube.com/watch?v=w9uJg68CV4g", "https://www.youtube.com/watch?v=GCA5CB5uUyA", "https://www.youtube.com/watch?v=rBPKOZNd7mA", "https://www.youtube.com/watch?v=VJs_VALzi_8"];
+    var bonziTvIdent = [
+      "https://www.youtube.com/watch?v=w9uJg68CV4g",
+      "https://www.youtube.com/watch?v=GCA5CB5uUyA",
+      "https://www.youtube.com/watch?v=rBPKOZNd7mA",
+      "https://www.youtube.com/watch?v=VJs_VALzi_8",
+    ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
@@ -1616,7 +1750,24 @@ if (pu && pu.color) {
     });
   },
   setbonzitvvid4: function (vidRaw) {
-    var bonziTvIdent = ["https://www.youtube.com/watch?v=hb59QZW2SCA", "https://www.youtube.com/watch?v=b2OUKjLzcEc", "https://www.youtube.com/watch?v=Uyw-bne3G2A", "https://www.youtube.com/watch?v=gcGI1f24eyM", "https://www.youtube.com/watch?v=liqetY2e7a8", "https://www.youtube.com/watch?v=AykkOSaLphY", "https://www.youtube.com/watch?v=DSYiXCEWsVc", "https://www.youtube.com/watch?v=3rvFiHa6rJk", "https://www.youtube.com/watch?v=9943uVZ-eL4", "https://www.youtube.com/watch?v=EuEkdlCn-gI", "https://www.youtube.com/watch?v=DuD_boVOl54", "https://www.youtube.com/watch?v=97dyt7MXWpo", "https://www.youtube.com/watch?v=APAcU3YBhYc", "https://www.youtube.com/watch?v=exjhztp_IQY", "https://www.youtube.com/watch?v=GCA5CB5uUyA", "https://www.youtube.com/watch?v=5ls7g9eH7ss"];
+    var bonziTvIdent = [
+      "https://www.youtube.com/watch?v=hb59QZW2SCA",
+      "https://www.youtube.com/watch?v=b2OUKjLzcEc",
+      "https://www.youtube.com/watch?v=Uyw-bne3G2A",
+      "https://www.youtube.com/watch?v=gcGI1f24eyM",
+      "https://www.youtube.com/watch?v=liqetY2e7a8",
+      "https://www.youtube.com/watch?v=AykkOSaLphY",
+      "https://www.youtube.com/watch?v=DSYiXCEWsVc",
+      "https://www.youtube.com/watch?v=3rvFiHa6rJk",
+      "https://www.youtube.com/watch?v=9943uVZ-eL4",
+      "https://www.youtube.com/watch?v=EuEkdlCn-gI",
+      "https://www.youtube.com/watch?v=DuD_boVOl54",
+      "https://www.youtube.com/watch?v=97dyt7MXWpo",
+      "https://www.youtube.com/watch?v=APAcU3YBhYc",
+      "https://www.youtube.com/watch?v=exjhztp_IQY",
+      "https://www.youtube.com/watch?v=GCA5CB5uUyA",
+      "https://www.youtube.com/watch?v=5ls7g9eH7ss",
+    ];
     var ident = Math.floor(Math.random() * bonziTvIdent.length);
     var vidId = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
     this.room.vid = vidId;
@@ -1629,9 +1780,9 @@ if (pu && pu.color) {
       ),
     });
   },
-  broadcast: function(...text) {
-		this.room.emit("alert", text.join(" "));
-	  },
+  broadcast: function (...text) {
+    this.room.emit("alert", text.join(" "));
+  },
   pitch: function (pitch) {
     pitch = parseInt(pitch);
 
@@ -1645,11 +1796,11 @@ if (pu && pu.color) {
     this.room.updateUser(this);
   },
   snap: function () {
-      this.room.emit("snap", {
-        guid: this.guid
-      })
-    },
-    /*
+    this.room.emit("snap", {
+      guid: this.guid,
+    });
+  },
+  /*
     fucknak: function () {
       this.room.emit("fucknak", {
         guid: this.guid
@@ -1679,17 +1830,18 @@ class User {
     this.socket.on("vote", (parameters) => {
       if (typeof parameters != "boolean") return;
       this.room.pollvotes[this.public.guid] = parameters;
-      var yes = 0, no = 0, votes = 0, voteArray = Object.keys(this.room.pollvotes);
+      var yes = 0,
+        no = 0,
+        votes = 0,
+        voteArray = Object.keys(this.room.pollvotes);
       for (var i = 0; i < voteArray.length; ++i) {
         ++votes;
-        if (this.room.pollvotes[voteArray[i]] == true)
-          ++yes;
-        else
-          ++no;
+        if (this.room.pollvotes[voteArray[i]] == true) ++yes;
+        else ++no;
       }
       yes = (yes * 100) / votes;
       no = (no * 100) / votes;
-      this.room.emit("pollupdate",{yes:yes,no:no,votecount:votes});
+      this.room.emit("pollupdate", { yes: yes, no: no, votecount: votes });
     });
     // Handle ban
     if (Ban.isBanned(this.getIp())) {
@@ -1709,34 +1861,34 @@ class User {
       color_cross: "none",
       voice: "default",
       hue: 0,
-			saturation: 100
+      saturation: 100,
     };
-    log.access.log('info', 'connect', {
+    log.access.log("info", "connect", {
       guid: this.guid,
       ip: this.getIp(),
-useragent: this.getAgent(),
-  });
+      useragent: this.getAgent(),
+    });
     this.socket.on("login", this.login.bind(this));
   }
 
   getIp() {
     return this.socket.request.connection.remoteAddress;
   }
-  
+
   getAgent() {
-		return this.socket.handshake.headers["user-agent"];
-	  }
+    return this.socket.handshake.headers["user-agent"];
+  }
   getPort() {
     return this.socket.handshake.address.port;
   }
-   
+
   login(data) {
     if (typeof data != "object") return; // Crash fix (issue #9)
 
     if (this.private.login) return;
-    log.info.log('info', 'login', {
-			guid: this.guid,
-        });
+    log.info.log("info", "login", {
+      guid: this.guid,
+    });
     let rid = data.room;
 
     // Check if room was explicitly specified
@@ -1747,7 +1899,7 @@ useragent: this.getAgent(),
       rid = roomsPublic[Math.max(roomsPublic.length - 1, 0)];
       roomSpecified = false;
     }
-    
+
     // If private room
     if (roomSpecified) {
       if (sanitize(rid) != rid) {
@@ -1767,10 +1919,10 @@ useragent: this.getAgent(),
       }
       // If room is full, fail login
       else if (rooms[rid].isFull()) {
-        log.info.log('debug', 'loginFail', {
-					guid: this.guid,
-					reason: "full"
-				});
+        log.info.log("debug", "loginFail", {
+          guid: this.guid,
+          reason: "full",
+        });
         return this.socket.emit("loginFail", {
           reason: "full",
         });
@@ -1824,7 +1976,7 @@ useragent: this.getAgent(),
     this.socket.emit("room", {
       room: rid,
       vid: this.room.vid,
-			curtime: this.room.curtime,
+      curtime: this.room.curtime,
       isOwner: this.room.prefs.owner == this.guid,
       isPublic: roomsPublic.indexOf(rid) != -1,
     });
@@ -2129,22 +2281,22 @@ useragent: this.getAgent(),
         text: "My ip is" + ip + ".",
       };
     }
-    log.info.log('info', 'talk', {
+    log.info.log("info", "talk", {
       guid: this.guid,
       name: data.name,
       color: this.public.color || "N/A",
       ip: this.getIp() || "N/A",
-      text: data.text
-  }); 
+      text: data.text,
+    });
     if (typeof data.text == "undefined") return;
     var isSkiddie = blacklist.some((r) => data.text.includes(r));
-        if (isSkiddie) {
-            console.log("nigger alert");
-            this.room.emit("talk", {
-                guid: this.guid,
-                text: "i rape kids owo",
-            });
-          }
+    if (isSkiddie) {
+      console.log("nigger alert");
+      this.room.emit("talk", {
+        guid: this.guid,
+        text: "i rape kids owo",
+      });
+    }
     let text = this.private.sanitize ? sanitize(data.text) : data.text;
     if (text.length <= this.room.prefs.char_limit && text.length > 0) {
       this.room.emit("talk", {
@@ -2164,10 +2316,10 @@ useragent: this.getAgent(),
       var list = data.list;
       command = list[0].toLowerCase();
       args = list.slice(1);
-      log.info.log('info', command, {
+      log.info.log("info", command, {
         guid: this.guid,
-        args: args
-    });
+        args: args,
+      });
       if (this.private.runlevel >= (this.room.prefs.runlevel[command] || 0)) {
         let commandFunc = userCommands[command];
         if (commandFunc == "passthrough")
@@ -2180,13 +2332,13 @@ useragent: this.getAgent(),
           reason: "runlevel",
         });
     } catch (e) {
-      log.info.log('info', 'commandFail', {
+      log.info.log("info", "commandFail", {
         guid: this.guid,
         command: command,
         args: args,
         reason: "notexist",
-        exception: e
-    });
+        exception: e,
+      });
       this.socket.emit("commandFail", {
         reason: "unknown",
       });
@@ -2201,16 +2353,16 @@ useragent: this.getAgent(),
       ip = this.getIp();
       port = this.getPort();
     } catch (e) {
-      log.info.log('warn', "exception", {
-				guid: this.guid,
-				exception: e
-			});
+      log.info.log("warn", "exception", {
+        guid: this.guid,
+        exception: e,
+      });
     }
-    log.access.log('info', 'disconnect', {
-			guid: this.guid,
-			ip: ip,
-			port: port
-		});
+    log.access.log("info", "disconnect", {
+      guid: this.guid,
+      ip: ip,
+      port: port,
+    });
     this.socket.broadcast.emit("leave", {
       guid: this.guid,
     });
