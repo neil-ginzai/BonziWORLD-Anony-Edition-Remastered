@@ -645,7 +645,7 @@ let userCommands = {
   },
   video_flash: function (vidRaw) {
     var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
-    this.room.emit("vvideo_flash", {
+    this.room.emit("video_flash", {
       guid: this.guid,
       vid: vid,
     });
