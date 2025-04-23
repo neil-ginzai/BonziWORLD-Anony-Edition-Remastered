@@ -95,6 +95,14 @@ var videoIds4PM2430PM = [
   "https://www.youtube.com/watch?v=H6b2wn2InKM",
   "https://www.youtube.com/watch?v=GI94aaSjt4M",
   "https://www.youtube.com/watch?v=WlZswQEUqUc",
+  "https://www.youtube.com/watch?v=CleUrqPLCzU", // Villager News
+  "https://www.youtube.com/watch?v=1hoSYvwnv_E",
+  "https://www.youtube.com/watch?v=U3p21FI9WBw",
+  "https://www.youtube.com/watch?v=z-TUOiJVaYk",
+  "https://www.youtube.com/watch?v=TH0ZXfmjRqE",
+  "https://www.youtube.com/watch?v=dzudQVAVVQ0",
+  "https://www.youtube.com/watch?v=qtwz81uG47k",
+  "https://www.youtube.com/watch?v=Frtax3pXPtg",
 ];
 var videoIds5PM = [
   "https://www.youtube.com/watch?v=MmJ8NVLji84",
@@ -118,7 +126,7 @@ var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=445gC5CYQfw",
   "https://www.youtube.com/watch?v=yYsOnfN5tIU",
   "https://www.youtube.com/watch?v=f5thUntstCY",
-  /* "https://www.youtube.com/watch?v=sPJmb4AuTq4", // MSAgent Skits Otalpik's Version otalpik fucking removed that video*/
+  /* "https://www.youtube.com/watch?v=sPJmb4AuTq4", otalpik fucking removed that video*/
   "https://www.youtube.com/watch?v=I61oSL5xBkk",
   "https://www.youtube.com/watch?v=0qzIsC0S6qQ", // CF7252 MSAgent Skits
   "https://www.youtube.com/watch?v=Jj1NPbhdrls", // Memes
@@ -153,10 +161,19 @@ var videoIds25MinutesofMSAgent = [
   "https://www.youtube.com/watch?v=x1yiXmkNfdc",
   "https://www.youtube.com/watch?v=H6b2wn2InKM",
   "https://www.youtube.com/watch?v=WlZswQEUqUc",
+  "https://www.youtube.com/watch?v=CleUrqPLCzU", // Villager News
+  "https://www.youtube.com/watch?v=1hoSYvwnv_E",
+  "https://www.youtube.com/watch?v=U3p21FI9WBw",
+  "https://www.youtube.com/watch?v=z-TUOiJVaYk",
+  "https://www.youtube.com/watch?v=TH0ZXfmjRqE",
+  "https://www.youtube.com/watch?v=dzudQVAVVQ0",
+  "https://www.youtube.com/watch?v=qtwz81uG47k",
+  "https://www.youtube.com/watch?v=Frtax3pXPtg",
 ];
 const blacklist = [
   "grounded",
   "give me godmode",
+  "give me admin",
   "anony is a nigger",
   "onrender.com",
   "replit.dev",
@@ -680,6 +697,13 @@ let userCommands = {
       css: txt.join(" "),
     });
   },
+  enableanonymode: function () {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "This command is only for admins.");
+      return;
+    }
+    this.socket.emit("enableanonymode");
+  },
   ban: function (data) {
     if (this.private.runlevel < 3) {
       this.socket.emit("alert", "admin=true");
@@ -694,16 +718,47 @@ let userCommands = {
           target = n;
         }
       });
-      target.socket.emit("ban", {
-        reason: "You got banned.",
-      });
-      target.disconnect();
-      target.socket.disconnect();
+      if (target.socket.request.connection.remoteAddress == "::1") {
+        Ban.removeBan(target.socket.request.connection.remoteAddress);
+      } else if (
+        target.socket.request.connection.remoteAddress == "::ffff:127.0.0.1"
+      ) {
+        Ban.removeBan(target.socket.request.connection.remoteAddress);
+      } else {
+        target.socket.emit("ban", {
+          reason: "You got banned.",
+        });
+        Ban.addBan(
+          target.socket.request.connection.remoteAddress,
+          24,
+          "You got banned."
+        );
+      }
     } else {
       this.socket.emit(
         "alert",
         "The user you are trying to kick left. Get dunked on nerd"
       );
+    }
+  },
+  // Code from BWR
+  letsplay: function (vidRaw) {
+    var vid = this.private.sanitize ? sanitize(vidRaw) : vidRaw;
+    if (vidRaw.includes("rio")) {
+      this.room.emit("letsplay2", {
+        guid: this.guid,
+        vid: vid,
+      });
+    } else if (vidRaw.includes("zuma")) {
+      this.room.emit("letsplay3", {
+        guid: this.guid,
+        vid: vid,
+      });
+    } else {
+      this.room.emit("letsplay", {
+        guid: this.guid,
+        vid: vid,
+      });
     }
   },
   doggis: function (data) {

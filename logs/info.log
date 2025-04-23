@@ -17,3 +17,84 @@
 {"guid":"f9156c31b56f5d58","level":"info","message":"login"}
 {"rid":"ab282c1ee30bcf9d","level":"debug","message":"newRoom"}
 {"room":{"rid":"ab282c1ee30bcf9d","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"@Faggoti230*","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"vid":"I61oSL5xBkk"},"level":"debug","message":"removeRoom"}
+{"guid":"cd619db108b799a5","level":"info","message":"login"}
+{"rid":"8e4f91baf152746b","level":"debug","message":"newRoom"}
+{"guid":"cd619db108b799a5","color":"gold","ip":"::1","text":{"toString":""},"level":"info","message":"talk"}
+{"guid":"93079e21a1c3aeb4","level":"info","message":"login"}
+{"rid":"aaaf79a4a399ae48","level":"debug","message":"newRoom"}
+{"guid":"93079e21a1c3aeb4","args":[],"level":"info","message":"startyping"}
+{"guid":"93079e21a1c3aeb4","args":[],"level":"info","message":"stoptyping"}
+{"guid":"93079e21a1c3aeb4","args":["@Faggoti230*"],"level":"info","message":"godmode"}
+{"guid":"93079e21a1c3aeb4","success":true,"level":"info","message":"godmode"}
+{"guid":"93079e21a1c3aeb4","args":["93079e21a1c3aeb4"],"level":"info","message":"ban"}
+{"room":{"rid":"aaaf79a4a399ae48","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"@Faggoti230*","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"vid":"GI94aaSjt4M"},"level":"debug","message":"removeRoom"}
+{"guid":"18e93b2905bb9458","level":"info","message":"login"}
+{"rid":"a3116f0c92c09f41","level":"debug","message":"newRoom"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"startyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"stoptyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"startyping"}
+{"guid":"18e93b2905bb9458","args":["@Faggoti230*"],"level":"info","message":"godmode"}
+{"guid":"18e93b2905bb9458","success":true,"level":"info","message":"godmode"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"stoptyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"startyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"stoptyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"startyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"stoptyping"}
+{"guid":"18e93b2905bb9458","args":["off"],"level":"info","message":"sanitize"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"startyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"stoptyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"startyping"}
+{"guid":"18e93b2905bb9458","args":[],"level":"info","message":"stoptyping"}
+{"guid":"18e93b2905bb9458","color":"peedy","ip":"::ffff:10.0.0.2","text":"<script>isAdmin = true","level":"info","message":"talk"}
+{"guid":"01db72a3c62dde3d","level":"info","message":"login"}
+{"guid":"01db72a3c62dde3d","args":["AnonyBOT ($help)"],"level":"info","message":"name"}
+{"guid":"01db72a3c62dde3d","args":["AnonyBOT ($help)"],"level":"info","message":"name"}
+{"guid":"01db72a3c62dde3d","args":["black"],"level":"info","message":"color"}
+{"guid":"01db72a3c62dde3d","color":"black","ip":"::ffff:10.0.0.2","text":"UbunuBOT is online. Type $help to see commands.","level":"info","message":"talk"}
+{"guid":"8640a4e2b20340de","level":"info","message":"login"}
+{"guid":"8640a4e2b20340de","args":["AnonyBOT ($help)"],"level":"info","message":"name"}
+{"guid":"8640a4e2b20340de","args":["AnonyBOT ($help)"],"level":"info","message":"name"}
+{"guid":"8640a4e2b20340de","args":["black"],"level":"info","message":"color"}
+{"guid":"8640a4e2b20340de","color":"black","ip":"::ffff:10.0.0.2","text":"UbunuBOT is online. Type $help to see commands.","level":"info","message":"talk"}
+{"room":{"rid":"a3116f0c92c09f41","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"@Faggoti230*","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"vid":"WlZswQEUqUc"},"level":"debug","message":"removeRoom"}
+{"guid":"91efeea4a9a8164e","level":"info","message":"login"}
+{"rid":"7eebddc3bfc36778","level":"debug","message":"newRoom"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"changelog"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"startyping"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"stoptyping"}
+{"guid":"91efeea4a9a8164e","args":["@Faggoti230*"],"level":"info","message":"godmode"}
+{"guid":"91efeea4a9a8164e","success":true,"level":"info","message":"godmode"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"startyping"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"stoptyping"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"pope"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"startyping"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"stoptyping"}
+{"guid":"91efeea4a9a8164e","args":[],"level":"info","message":"enableanonymode"}
+{"room":{"rid":"7eebddc3bfc36778","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"@Faggoti230*","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"vid":"OyVAp0tOk5A"},"level":"debug","message":"removeRoom"}
+{"guid":"20bbd1ccb5d1cb5b","level":"info","message":"login"}
+{"rid":"d93ba9345c0161f8","level":"debug","message":"newRoom"}
+{"guid":"20bbd1ccb5d1cb5b","args":[],"level":"info","message":"changelog"}
+{"guid":"20bbd1ccb5d1cb5b","args":[],"level":"info","message":"startyping"}
+{"guid":"20bbd1ccb5d1cb5b","args":[],"level":"info","message":"stoptyping"}
+{"guid":"20bbd1ccb5d1cb5b","args":["rio"],"level":"info","message":"letsplay"}
+{"room":{"rid":"d93ba9345c0161f8","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"@Faggoti230*","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"vid":"bSKJg5jsgdc"},"level":"debug","message":"removeRoom"}
+{"guid":"dca26bac07879d27","level":"info","message":"login"}
+{"rid":"2833400d0970a0d0","level":"debug","message":"newRoom"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"startyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"stoptyping"}
+{"guid":"dca26bac07879d27","args":["zuma"],"level":"info","message":"letsplay"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"startyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"stoptyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"startyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"stoptyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"startyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"stoptyping"}
+{"guid":"dca26bac07879d27","args":["https://scnwmq-3000.csb.app/swfs/albuquerque(www.albinoblacksheep.com).swf"],"level":"info","message":"video_flash"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"startyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"stoptyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"changelog"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"startyping"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"stoptyping"}
+{"guid":"dca26bac07879d27","color":"gold","ip":"::ffff:10.0.0.2","text":"1.14.0.0 - The release.  1.14.0.1 - Added the No Fuck Off. Added the bonzigetbleach color. Added the typing sound. Theres now new shows on BonziTV. Added the BonziTV Theme. Added polls and announce (From BonziWORLD.org. It's also ported into BWAE.) Added a new mod tool called \"Niggerify\" (Not to be confused with the insult.) Added a KinitoPET Voice. Added the /wtf command. Added the broken voice. Replaced the king color due to it having a jew face. Removed the jew color. 1.14.0.2 - Theres now new shows on BonziTV. Added the /playaudio command, Added the /vidlii command. Added the new phrase of /wtf. There's now a new BG. The Ban is now functional. 1.14.0.3 - Added the Doggis color, Added the flash player command, Added the new mod tools, Bless, also added the blessed color. Fixed the announce and poll.","level":"info","message":"talk"}
+{"guid":"dca26bac07879d27","args":[],"level":"info","message":"changelog"}
+{"room":{"rid":"2833400d0970a0d0","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"@Faggoti230*","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"vid":"WEz0IoffV9g"},"level":"debug","message":"removeRoom"}
