@@ -435,6 +435,7 @@ class Room {
     this.rid = rid;
     this.prefs = prefs;
     this.users = [];
+    this.pollvotes = {};
 
     const date = new Date();
     const hours = date.getHours();
@@ -718,26 +719,20 @@ let userCommands = {
           target = n;
         }
       });
-      if (target.socket.request.connection.remoteAddress == "::1") {
-        Ban.removeBan(target.socket.request.connection.remoteAddress);
-      } else if (
-        target.socket.request.connection.remoteAddress == "::ffff:127.0.0.1"
-      ) {
-        Ban.removeBan(target.socket.request.connection.remoteAddress);
-      } else {
-        target.socket.emit("ban", {
-          reason: "You got banned.",
-        });
-        Ban.addBan(
-          target.socket.request.connection.remoteAddress,
-          24,
-          "You got banned."
-        );
-      }
+      target.socket.emit("ban", {
+        reason: "You got banned.",
+      });
+      Ban.addBan(
+        target.socket.request.connection.remoteAddress,
+        24,
+        "You got banned."
+      );
+      target.disconnect("");
+      target.socket.disconnect("");
     } else {
       this.socket.emit(
         "alert",
-        "The user you are trying to kick left. Get dunked on nerd"
+        "The user you are trying to ban left. Get dunked on nerd"
       );
     }
   },
@@ -1834,9 +1829,6 @@ let userCommands = {
         ""
       ),
     });
-  },
-  broadcast: function (...text) {
-    this.room.emit("alert", text.join(" "));
   },
   pitch: function (pitch) {
     pitch = parseInt(pitch);
