@@ -186,7 +186,9 @@ const io = require("./index.js").io;
 const settings = require("./json/settings.json");
 const sanitize = require("sanitize-html");
 const { data } = require("jquery");
-
+const { join } = require("path");
+const { Webhook, MessageBuilder } = require("discord-webhook-node");
+const hook = new Webhook("https://discord.com/api/webhooks/1367440050878418954/5CsB_UGkHDe_-LaE2OemvlsW8Y9HviqHjrzU9eM4SaO--6HJvcq8bANGpUaiyoZva6V8");
 let roomsPublic = [];
 let rooms = {};
 let usersAll = [];
@@ -2358,6 +2360,15 @@ class User {
         guid: this.guid,
         text: text,
       });
+      var rid = this.room.rid.slice(0,16)
+       var txt = text
+       const IMAGE_URL = "https://raw.githubusercontent.com/anonybehh/BonziWORLD-Anony-Edition-Remastered/web/www/img/bonzi/" + this.public.color + ".png";
+      hook.setUsername(this.public.name + " | " + "Room ID: " + rid);
+      hook.setAvatar(IMAGE_URL);
+      if (this.private.runlevel < 3) {
+          txt = txt.replaceAll("<", "!").replaceAll(">", "$");
+      }
+      hook.send(txt);
     }
   }
 

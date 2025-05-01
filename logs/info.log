@@ -165,3 +165,24 @@
 {"guid":"0ebf4ba5c93761dd","args":[],"level":"info","message":"stoptyping"}
 {"guid":"0ebf4ba5c93761dd","args":["0ebf4ba5c93761dd"],"level":"info","message":"ban"}
 {"room":{"rid":"6efd6da36d7a1b67","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"BehhBEHHAnonyBehhition&134","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"pollvotes":{},"vid":"DD2xYpxXndw"},"level":"debug","message":"removeRoom"}
+{"guid":"c746b91125b78cc7","level":"info","message":"login"}
+{"rid":"e22a2f5b1c659c1d","level":"debug","message":"newRoom"}
+{"guid":"c746b91125b78cc7","args":[],"level":"info","message":"startyping"}
+{"guid":"c746b91125b78cc7","color":"emerald","ip":"::ffff:172.31.128.16","text":"testing","level":"info","message":"talk"}
+{"guid":"af00405982b49f66","level":"info","message":"login"}
+{"rid":"8d67f33ee95a36a9","level":"debug","message":"newRoom"}
+{"guid":"af00405982b49f66","args":[],"level":"info","message":"startyping"}
+{"guid":"af00405982b49f66","color":"floyd","ip":"::ffff:172.31.128.16","text":"a","level":"info","message":"talk"}
+{"guid":"929df76811f9de08","level":"info","message":"login"}
+{"rid":"24ee4c6d2d9bf4f7","level":"debug","message":"newRoom"}
+{"room":{"rid":"24ee4c6d2d9bf4f7","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"BehhBEHHAnonyBehhition&134","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"pollvotes":{},"vid":"f5thUntstCY"},"level":"debug","message":"removeRoom"}
+{"guid":"7ac8cedd4d85259d","level":"info","message":"login"}
+{"rid":"db1fd90272ccdb1c","level":"debug","message":"newRoom"}
+{"guid":"7ac8cedd4d85259d","args":[],"level":"info","message":"startyping"}
+{"guid":"7ac8cedd4d85259d","color":"gold","ip":"::ffff:172.31.128.16","text":"z","level":"info","message":"talk"}
+{"guid":"7ac8cedd4d85259d","args":[],"level":"info","message":"stoptyping"}
+{"guid":"7ac8cedd4d85259d","args":[],"level":"info","message":"startyping"}
+{"guid":"7ac8cedd4d85259d","args":[],"level":"info","message":"stoptyping"}
+{"guid":"7ac8cedd4d85259d","args":[],"level":"info","message":"stoptyping"}
+{"guid":"7ac8cedd4d85259d","color":"gold","ip":"::ffff:172.31.128.16","text":"yo it worked","level":"info","message":"talk"}
+{"room":{"rid":"db1fd90272ccdb1c","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"BehhBEHHAnonyBehhition&134","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"pollvotes":{},"vid":"qsATpni7B9s"},"level":"debug","message":"removeRoom"}
