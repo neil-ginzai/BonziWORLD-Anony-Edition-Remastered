@@ -189,6 +189,13 @@ const { data } = require("jquery");
 const { join } = require("path");
 const { Webhook, MessageBuilder } = require("discord-webhook-node");
 const hook = new Webhook("https://discord.com/api/webhooks/1367440050878418954/5CsB_UGkHDe_-LaE2OemvlsW8Y9HviqHjrzU9eM4SaO--6HJvcq8bANGpUaiyoZva6V8");
+const isReplit = settings.isReplit;
+
+if (isReplit === true) {
+	var port = process.env.port || settings.port;
+} else {
+	var port = process.env.port || settings.port;
+}
 let roomsPublic = [];
 let rooms = {};
 let usersAll = [];
@@ -555,10 +562,29 @@ function newRoom(rid, prefs) {
     rid: rid,
   });
 }
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+let godword_random = Math.floor((Math.random() * 1000000000000000) + 10);
+if (isReplit === true) {
+	console.log('Godword:', godword_random)
+
+	setInterval(function() {
+		console.log('Godword:', godword_random)
+	}, 60 * 1000); 
+}
+
 
 let userCommands = {
   godmode: function (word) {
-    let success = word == this.room.prefs.godword;
+    if (isReplit === true) {
+			var bonzi_godword = godword_random;
+		} else {
+			var bonzi_godword = this.room.prefs.godword;
+		}
+    let success = word == bonzi_godword;
     if (success) {
       this.private.runlevel = 3;
       this.socket.emit("admin");

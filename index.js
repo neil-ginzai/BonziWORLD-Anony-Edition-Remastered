@@ -24,7 +24,6 @@ try {
     throw "Could not read 'settings.json'.";
   }
 }
-
 // Load settings into memory
 const settings = require("./json/settings.json");
 // Setup basic express server
@@ -44,6 +43,13 @@ var io = require("socket.io")(server);
 var port = process.env.PORT || settings.port;
 
 exports.io = io;
+
+const isReplit = settings.isReplit;
+if (isReplit === true) {
+	var port = process.env.port || settings.port;
+} else {
+	var port = process.env.port || settings.port;
+}
 
 // Init winston loggers (hi there)
 const Log = require("./log.js");

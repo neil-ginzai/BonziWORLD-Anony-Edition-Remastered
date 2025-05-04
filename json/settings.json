@@ -4,7 +4,7 @@
       "status_limit": 36,
       "char_limit": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
       "name_limit": 25,
-      "godword": "JewishIWasJewishOnceAndNigger38AndFaggoti29AndBoom",
+      "godword": "8749irhtglkjroOIYTURJUG0OQOC09v4n89u89t54:ieourgHUGgu1!058-__47hfGG+_+_89r95ur97468998urijnve8un098nv8HIUEHr8t78fJ87bgfhgtyppo-70-0__-9456fFjGjg_=EU0756!++_-__H",
       "runlevel": {
         "godmode": 0,
         "youtube": 0,
@@ -58,7 +58,7 @@
     "private": {
       "char_limit": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
       "name_limit": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
-      "godword": "JewishIWasJewishOnceAndNigger38AndFaggoti29AndBoom",
+      "godword": "8749irhtglkjroOIYTURJUG0OQOC09v4n89u89t54:ieourgHUGgu1!058-__47hfGG+_+_89r95ur97468998urijnve8un098nv8HIUEHr8t78fJ87bgfhgtyppo-70-0__-9456fFjGjg_=EU0756!++_-__H",
       "runlevel": {
         "godmode": 0,
         "youtube": 0,
@@ -177,6 +177,7 @@
   ],
   "banLength": 1440,
   "port": 3000,
+  "isReplit": true,
   "channel": "bonkeyworld-anony-ed",
 	"server_mode": "default",
   "express": {

@@ -72,3 +72,8 @@
 {"guid":"a304f2423f984cf7","ip":"::ffff:172.31.128.66","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0","level":"info","message":"connect"}
 {"guid":"dbdfb41afed9538f","ip":"::ffff:172.31.128.80","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0","level":"info","message":"connect"}
 {"guid":"4a1deccf4da2f077","ip":"::ffff:172.31.128.80","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0","level":"info","message":"connect"}
+{"guid":"7437011e7f198329","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0","level":"info","message":"connect"}
+{"guid":"7437011e7f198329","ip":"::1","level":"info","message":"disconnect"}
+{"guid":"ea1a9f22b033fbcf","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0","level":"info","message":"connect"}
+{"guid":"1f934b81c04ca3db","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0","level":"info","message":"connect"}
+{"guid":"08a6ec0f84274777","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0","level":"info","message":"connect"}
