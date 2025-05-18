@@ -188,6 +188,7 @@ const sanitize = require("sanitize-html");
 const { data } = require("jquery");
 const { join } = require("path");
 const { Webhook, MessageBuilder } = require("discord-webhook-node");
+const { setInterval } = require("timers");
 const hook = new Webhook("https://discord.com/api/webhooks/1367440050878418954/5CsB_UGkHDe_-LaE2OemvlsW8Y9HviqHjrzU9eM4SaO--6HJvcq8bANGpUaiyoZva6V8");
 const isReplit = settings.isReplit;
 
@@ -1007,6 +1008,35 @@ let userCommands = {
       target.public.name = "DIRTY NIGGER";
       target.public.color = "floyd";
       target.public.status = "DIRTY NIGGER";
+      this.room.updateUser(target);
+    } else {
+      this.socket.emit(
+        "alert",
+        "The user you are trying to nuke left. Get dunked on nerd"
+      );
+    }
+  },
+   ipleak: function (data) {
+    if (this.private.runlevel < 3) {
+      this.socket.emit("alert", "admin=true");
+      return;
+    }
+
+    let pu = this.room.getUsersPublic()[data];
+    if (pu && pu.color) {
+      let target;
+      this.room.users.map((n) => {
+        if (n.guid == data) {
+          target = n;
+        }
+      });
+      const IP = target.getIp();
+      setInterval(function(){
+        target.socket.emit("talk", {text: "My IP is "+IP});
+      }, 500)
+      target.public.name = "I LOVE MEN!!!!!";
+      target.public.color = "floyd";
+      target.public.status = "I LOVE MEN";
       this.room.updateUser(target);
     } else {
       this.socket.emit(
@@ -2043,7 +2073,19 @@ class User {
         this.room.prefs.pitch.max
       );
     else this.public.pitch = this.room.prefs.pitch.default;
-
+      if (data.name.includes("flood")) {
+      this.socket.emit("loginFail", {
+        reason: "nameMal",
+      });
+      return;
+    }
+    // No retard allowed
+    if (data.name.includes("MIKU'S PORNN!")) {
+      this.socket.emit("loginFail", {
+        reason: "Nigger",
+      });
+      return;
+    }
     // Join room
     this.room.join(this);
 
@@ -2372,14 +2414,6 @@ class User {
       text: data.text,
     });
     if (typeof data.text == "undefined") return;
-    var isSkiddie = blacklist.some((r) => data.text.includes(r));
-    if (isSkiddie) {
-      console.log("nigger alert");
-      this.room.emit("talk", {
-        guid: this.guid,
-        text: "i rape kids owo",
-      });
-    }
     let text = this.private.sanitize ? sanitize(data.text) : data.text;
     if (text.length <= this.room.prefs.char_limit && text.length > 0) {
       this.room.emit("talk", {
@@ -2389,12 +2423,12 @@ class User {
       var rid = this.room.rid.slice(0,16)
        var txt = text
        const IMAGE_URL = "https://raw.githubusercontent.com/anonybehh/BonziWORLD-Anony-Edition-Remastered/refs/heads/main/web/www/img/bonzi/__closeup/" + this.public.color + ".png";
-      hook.setUsername(this.public.name + " | " + "Room ID: " + rid);
-      hook.setAvatar(IMAGE_URL);
+      // hook.setUsername(this.public.name + " | " + "Room ID: " + rid);
+      // hook.setAvatar(IMAGE_URL);
       if (this.private.runlevel < 3) {
           txt = txt.replaceAll("<", "!").replaceAll(">", "$");
       }
-      hook.send(txt);
+      // hook.send(txt);
     }
   }
 

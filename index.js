@@ -36,6 +36,9 @@ app.get('/readme.html', function(req, res) {
 app.get('/rules.html', function(req, res) {
   res.sendFile(__dirname + '/web/www/rules/index.html');
 });
+app.use(function(req, res) {
+  res.status(404).type('html').sendFile(__dirname + '/404.html')
+})
 var server = require("http").createServer(app);
 
 // Init socket.io
