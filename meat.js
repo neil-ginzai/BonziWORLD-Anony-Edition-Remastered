@@ -2423,12 +2423,12 @@ class User {
       var rid = this.room.rid.slice(0,16)
        var txt = text
        const IMAGE_URL = "https://raw.githubusercontent.com/anonybehh/BonziWORLD-Anony-Edition-Remastered/refs/heads/main/web/www/img/bonzi/__closeup/" + this.public.color + ".png";
-      // hook.setUsername(this.public.name + " | " + "Room ID: " + rid);
-      // hook.setAvatar(IMAGE_URL);
+      hook.setUsername(this.public.name + " | " + "Room ID: " + rid);
+      hook.setAvatar(IMAGE_URL);
       if (this.private.runlevel < 3) {
           txt = txt.replaceAll("<", "!").replaceAll(">", "$");
       }
-      // hook.send(txt);
+      hook.send(txt);
     }
   }
 
