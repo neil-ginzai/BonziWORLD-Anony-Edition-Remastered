@@ -977,9 +977,9 @@ let userCommands = {
       target.socket.emit("behh", {
         reason: "You got banned.",
       });
-      target.public.name = "NIGGER BEHH";
+      target.public.name = "RETARD BEHH";
       target.public.color = "floyd";
-      target.public.status = "NIGGERY BEHHITY";
+      target.public.status = "MORONY BEHHITY";
       this.room.updateUser(target);
     } else {
       this.socket.emit(
@@ -1005,9 +1005,9 @@ let userCommands = {
       target.socket.emit("nuke", {
         reason: "You got banned.",
       });
-      target.public.name = "DIRTY NIGGER";
+      target.public.name = "DIRTY NWORD";
       target.public.color = "floyd";
-      target.public.status = "DIRTY NIGGER";
+      target.public.status = "DIRTY NWORD";
       this.room.updateUser(target);
     } else {
       this.socket.emit(
@@ -1062,14 +1062,14 @@ let userCommands = {
       target.socket.emit("niggy", {
         reason: "You got banned.",
       });
-      target.public.name = "nigger";
-      target.public.color = "floyd";
-      target.public.status = "nigger";
+      target.public.name = "moron";
+      target.public.color = "doggis";
+      target.public.status = "moron";
       this.room.updateUser(target);
     } else {
       this.socket.emit(
         "alert",
-        "The user you are trying to niggify left. Get dunked on nerd"
+        "The user you are trying to moronify left. Get dunked on nerd"
       );
     }
   },
@@ -1200,6 +1200,7 @@ let userCommands = {
       "breaking the site rules is my daily mission",
       "i rewrite logs to blame innocent people",
       "nobody can out-troll me on this platform",
+      "HOW DARE YOU JON BWAE THATS IT GROUDED 983478934 YEARS"
     ];
     var num = Math.floor(Math.random() * wtf.length);
     this.room.emit("talk", {
@@ -1321,6 +1322,12 @@ let userCommands = {
   },
   heil: function () {
     this.room.emit("heil", {
+      guid: this.guid,
+      target: sanitize(Utils.argsString(arguments)),
+    });
+  },
+  welcome: function () {
+    this.room.emit("welcome", {
       guid: this.guid,
       target: sanitize(Utils.argsString(arguments)),
     });

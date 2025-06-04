@@ -262,3 +262,7 @@
 {"guid":"ece6f1e1988aecb5","args":[],"level":"info","message":"startyping"}
 {"guid":"ece6f1e1988aecb5","args":[],"level":"info","message":"stoptyping"}
 {"guid":"ece6f1e1988aecb5","color":"magenta","ip":"::1","text":"49021548274240","level":"info","message":"talk"}
+{"guid":"ee6ad62c163f368c","level":"info","message":"login"}
+{"rid":"ff21f5377d95c9b9","level":"debug","message":"newRoom"}
+{"guid":"ee6ad62c163f368c","args":["Anonymous"],"level":"info","message":"welcome"}
+{"room":{"rid":"ff21f5377d95c9b9","prefs":{"status_limit":36,"char_limit":1e+86,"name_limit":25,"godword":"8749irhtglkjroOIYTURJUG0OQOC09v4n89u89t54:ieourgHUGgu1!058-__47hfGG+_+_89r95ur97468998urijnve8un098nv8HIUEHr8t78fJ87bgfhgtyppo-70-0__-9456fFjGjg_=EU0756!++_-__H","runlevel":{"godmode":0,"youtube":0,"joke":0,"fact":0,"backflip":0,"color":0,"asshole":0,"triggered":0,"linux":0,"pitch":0,"snap":0,"speed":0,"pawn":0,"bees":0,"image":0,"video":0,"audio":0,"sad":0,"vaporwave":0,"unvaporwave":0,"name":0,"playaudio":3,"stopaudio":3,"espeak":3,"owo":0,"sanitize":3,"status":0,"pope":3,"king":3},"room_max":1e+86,"owner":null,"pitch":{"max":400,"min":-50,"default":"random"},"speed":{"max":275,"min":125,"default":"random"},"amplitude":{"max":75,"min":20,"default":"random"},"defaultName":"Anonymous"},"users":[],"pollvotes":{},"vid":"WlZswQEUqUc"},"level":"debug","message":"removeRoom"}
