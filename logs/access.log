@@ -610,3 +610,5 @@
 {"guid":"e483ae8557ec90dd","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","level":"info","message":"connect"}
 {"guid":"a2ce4ffc2fb39a00","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","level":"info","message":"connect"}
 {"guid":"df4998a0952c512f","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","level":"info","message":"connect"}
+{"guid":"df4998a0952c512f","ip":"::1","level":"info","message":"disconnect"}
+{"guid":"620ee4fc6b836bbf","ip":"::1","useragent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36","level":"info","message":"connect"}
