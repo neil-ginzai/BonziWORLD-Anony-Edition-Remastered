@@ -53,7 +53,7 @@
          "min": 20,
          "default": "random"
        },
-      "defaultName": "Anonymous"
+      "defaultName": "Blud"
     },
     "private": {
       "char_limit": 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999,
@@ -107,7 +107,7 @@
          "min": 20,
          "default": "random"
        },
-      "defaultName": "Anonymous"
+      "defaultName": "Blud"
     }
   },
   "consoleOutput": true,
