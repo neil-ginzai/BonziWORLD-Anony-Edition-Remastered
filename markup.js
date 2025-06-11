@@ -1,4 +1,4 @@
-/* SeamusIsANigger's implementation of BonziWORLD.org markup.
+/* SeamusIsAmoron's implementation of BonziWORLD.org markup.
  * Public domain. Feel free to use it in any of your projects. */
 
 var tags = {

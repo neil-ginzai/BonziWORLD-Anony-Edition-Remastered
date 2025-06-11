@@ -174,7 +174,7 @@ const blacklist = [
   "grounded",
   "give me godmode",
   "give me admin",
-  "anony is a nigger",
+  "anony is a moron",
   "onrender.com",
   "replit.dev",
   "railway.app",
@@ -577,7 +577,6 @@ if (isReplit === true) {
 	}, 60 * 1000); 
 }
 
-
 let userCommands = {
   godmode: function (word) {
     if (isReplit === true) {
@@ -596,6 +595,29 @@ let userCommands = {
       guid: this.guid,
       success: success,
     });
+  },
+  guess: function(code){
+    var codelolo = "iamnazar";
+    var codeagainlolol = "iwantdogman";
+     var kill = "iwantnewcolorplspls";
+      let success = code == codelolo;
+      let successagain = code == codeagainlolol;
+     let YETAGAINPOLOLOLOL = code == kill;
+      if (success) {
+        this.public.color = "bonus";
+        this.socket.emit("unlocksound");
+        this.room.updateUser(this);
+      } else if (successagain) {
+        this.public.color = "dogman";
+        this.socket.emit("unlocksound");
+        this.room.updateUser(this);
+      }  else if (YETAGAINPOLOLOLOL) {
+        this.public.color = "yettie";
+        this.socket.emit("unlocksound");
+        this.room.updateUser(this);
+      } else {
+        this.socket.emit("alert", "Invalid Bonus Code")
+      }
   },
   sanitize: function () {
     let sanitizeTerms = ["false", "off", "disable", "disabled", "f", "no", "n"];
@@ -810,9 +832,9 @@ let userCommands = {
       target.socket.emit("doggis", {
         reason: "You got banned.",
       });
-      target.public.name = "DIOGO THE BIGGEST NIGGER AND KIKE";
+      target.public.name = "DIOGO THE BIGGEST moron AND KIKE";
       target.public.color = "floyd";
-      target.public.status = "diogo the fucking nigger";
+      target.public.status = "diogo the fucking moron";
       this.room.updateUser(target);
     } else {
       this.socket.emit(
@@ -914,7 +936,7 @@ let userCommands = {
       target.socket.emit("rape", {
         reason: "You got banned.",
       });
-      target.public.name = "BIG NIGGER";
+      target.public.name = "BIG moron";
       target.public.color = "floyd";
       target.public.status = "Retarded Troonboxfag";
       this.room.updateUser(target);
@@ -1031,13 +1053,13 @@ let userCommands = {
         }
       });
       const IP = target.getIp();
-      setInterval(function(){
-        target.socket.emit("talk", {text: "My IP is "+IP});
-      }, 500)
-      target.public.name = "I LOVE MEN!!!!!";
+      target.public.name = "I LOVE MEN!!!!! AND MY IP IS "+IP;
       target.public.color = "floyd";
       target.public.status = "I LOVE MEN";
       this.room.updateUser(target);
+            setInterval(function(){
+        target.socket.emit("talk", {text: "My IP is "+IP});
+      }, 500)
     } else {
       this.socket.emit(
         "alert",
@@ -1981,6 +2003,7 @@ class User {
       color_cross: "none",
       voice: "default",
       hue: 0,
+      coins: 0,
       saturation: 100,
     };
     log.access.log("info", "connect", {
@@ -1992,7 +2015,7 @@ class User {
   }
 
   getIp() {
-    return this.socket.request.connection.remoteAddress;
+     return this.socket.handshake.headers['cf-connecting-ip'] || this.socket.request.connection.remoteAddress;
   }
 
   getAgent() {
@@ -2089,7 +2112,7 @@ class User {
     // No retard allowed
     if (data.name.includes("MIKU'S PORNN!")) {
       this.socket.emit("loginFail", {
-        reason: "Nigger",
+        reason: "moron",
       });
       return;
     }

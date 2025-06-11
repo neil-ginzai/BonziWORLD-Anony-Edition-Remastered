@@ -223,6 +223,10 @@
                   <span id="themes_label" class="no_selection">Themes</span>
               </div>
       <div id="room_info" class="no_selection log-minimized">
+          <div id="bonus_icon" class="no_selection log-minimized" alt="Codes" title="Bonus" onclick='$("#page_bonuscodes").show()'>
+                  <img src="./img/icons/other/themes.png" width="45" draggable="false" /><br />
+                  <big><span id="bonus_label" class="no_selection">Bonus Codes</span></big>
+              </div>
         Room ID - <span class="room_id">???</span><br />
         <span id="room_public">This room is public.</span>
         <span id="room_private">This room is private.</span>
@@ -387,6 +391,17 @@
                   <button onclick="$('#pollcont').hide()">Hide Poll</button>
         </div>
       </div>
+  <!--    <div id="page_bwcoins" class="page" style="display:none">
+        <div id="error_cont" class="message_cont">
+         You have <h1 id="bwcoins_count">NaN</h1> coins<br>
+        <br>
+        <button onclick="socket.emit('minecoins')">Mine Coins</button><br>
+        <br>
+        <button onclick="$('#page_bwcoins').hide()">Close</button>
+        </div>
+      </div>$
+
+      --> 
       <div id="nigga_cont" class="page" style="display:none">
         <div id="error_cont" class="message_cont">
           <img src="./img/ban/logo.png"><br>
@@ -408,6 +423,12 @@
                 <b>Message: </b><input id="dm_input" /><br />
                 <input type="hidden" id="dm_guid" /><br />
                 <button onclick="dm_send()" class="btn no_selection">Send</button>
+            </div>
+            <div id="page_bonuscodes" class="message_cont" style="display: none;">
+                <h1>Bonus Codes</h1>
+                <br />
+                <b>Code: </b><input id="code_input" /><br />
+                <button onclick="unlock()" class="btn no_selection">Enter</button>
             </div>
       <div id="page_changelog" class="page" style="display: none">
         <div id="error_cont" class="message_cont">
